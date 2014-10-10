@@ -7,7 +7,7 @@
     </head>
     <body>
         <?php include 'top_menu.php'; ?>
-        <div id="main_container">
+        <div id="div_main_container">
             <div id="div_main_index">
                 <div id="div_main_banner">
                 </div>

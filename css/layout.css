@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* Documento CSS de formatação dos site
+ * Author: Fábio C.S. Miranda e Marcos Saturno
+ */
+@import 'reset.css';
+@import 'text.css';
+
+/*======Containers===========================================*/
+
+#div_topo_content, #div_main_index, #div_main_container{
+    width: 1115px;
+    margin: 0 auto;
+}
+
+/*====Header(top_menu.php)============*/
+
+#div_topo_content{
+	height: 160px;
+	position: relative;
+}
+
+#div_menu{
+	width: 625px;
+	height: 25px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+}
+
+#menu li{
+	display: inline;
+}
+
+#div_menu a:hover{
+	background-color: #b8312f;
+	color: #fff;
+}
+
+#menu a:hover{
+	border-top: 10px solid #b8312f;
+}
+
+#div_logo{
+	float: left;
+	width: 297px;
+	border-bottom: 30px;
+	margin-top: 15px;
+}
+
+#div_logo img{
+	width: 100%;
+}
+
+#div_topo{
+	background-color: #efefef;
+}
+
+/***Main Container***/
+
+#div_main_container{
+	width: 100%;
+	height: 100%;
+	background-image: url('../img/bg_web.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}

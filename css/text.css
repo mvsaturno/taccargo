@@ -1,0 +1,83 @@
+/**Fonts import from Google fonts:*/
+@import url(http://fonts.googleapis.com/css?family=Ek+Mukta:200,700);
+
+/* `Basic HTML
+----------------------------------------------------------------------------------------------------*/
+body {
+  font: 13px/1.2 Calibri, Arial, Helvetica, Tahoma, Verdana, sans-serif;
+  color: #888888;
+}
+
+/* `Headings
+----------------------------------------------------------------------------------------------------*/
+
+h1 {
+  font-size: 2.6em;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+h3 {
+  font-size: 1.8em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.3em;
+}
+
+h6 {
+  font-size: 1.1em;
+}
+
+/* `Spacing
+----------------------------------------------------------------------------------------------------*/
+
+ol {
+  list-style: decimal;
+}
+
+ul {
+  list-style: disc;
+}
+
+li {
+  /*margin-left: 15px;*/
+}
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset,
+figure {
+  margin-bottom: 25px;
+}
+
+/*  Menu Links  */
+
+#div_menu a{
+  color: #646464;
+  text-decoration: none;
+  font-family: 'Ek Mukta', sans-serif;
+  font-weight: 200;
+  font-size: 1.5em;
+  padding: 10px;
+  /*padding-right: 10px;*/
+  /*padding-top: 10px;*/
+}
