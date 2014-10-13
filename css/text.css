@@ -1,6 +1,13 @@
 /**Fonts import from Google fonts:*/
 @import url(http://fonts.googleapis.com/css?family=Ek+Mukta:200,700);
 
+@font-face {
+    font-family: 'Ek Mukta';
+    src: url('fonts/EkMukta-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* `Basic HTML
 ----------------------------------------------------------------------------------------------------*/
 body {
@@ -66,7 +73,7 @@ table,
 address,
 fieldset,
 figure {
-  margin-bottom: 25px;
+  /*margin-bottom: 25px;*/
 }
 
 /*  Menu Links  */
