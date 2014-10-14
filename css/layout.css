@@ -6,13 +6,22 @@
 @import 'text.css';
 
 /*======Containers===========================================*/
-
 #div_bottom_content, #div_topo_content, #div_main_index, #div_main_container{
     margin: 0 auto;
 }
 
-/*====Header(top_menu.php)============*/
+#div_main_container{
+	height: 780px;
+	background-image: url('../img/bg_web.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*Essa balaca aqui ia ficar mto legal: */
+	/*background-attachment: fixed;*/
+}
 
+
+
+/*====Header(top_menu.php)============*/
 #div_topo_content{
 	height: 160px;
 	position: relative;
@@ -52,58 +61,10 @@
 	background-color: #efefef;
 }
 
-/***Main Container***/
-
-#div_main_container{
-	height: 780px;
-	background-image: url('../img/bg_web.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-/* Index */
-
-/*Banners da index:*/
-#slider{
-	margin-top: 15px;
-}
-
-.div_main_content{
-	margin-top: 15px;
-	background-color: rgba(255,255,255,0.5);
-	margin-bottom: 35px;
-}
-
-.div_main_content img{
-	margin-top: 20px;
-	margin-bottom: 20px;
-	/*border: 5px solid white inset;*/
-}
-
-.div_main_content a{
-	color: #b8312f;
-	font-weight: bold;
-	text-decoration: none;
-	float: right;
-	font-size: 1.4em;
-	margin-bottom: 20px;
-}
-
-.div_main_content p{
-	color: #000;
-	font-size: 1.4em;
-	font-weight: bold;
-}
-
-.div_main_content h3{
-	background-color: #b8312f;
-	color: #fff;
-	text-align: center;
-	font-weight: 200;
-}
 
 
-/**Rodapé (bottom)***/
+
+/*======Rodapé(bottom)===========================================*/
 
 #div_bottom{
 	background-color: #b8312f;
@@ -153,4 +114,90 @@
 
 #social_icons{
 	float: right;
+}
+
+/*======Páginas===========================================*/
+
+/* Index */
+#slider{
+	margin-top: 15px;
+}
+
+.div_main_content{
+	margin-top: 15px;
+	background-color: rgba(255,255,255,0.5);
+	margin-bottom: 35px;
+}
+
+.div_main_content img{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	/*border: 5px solid white inset;*/
+}
+
+.div_main_content a{
+	color: #b8312f;
+	font-weight: bold;
+	text-decoration: none;
+	float: right;
+	font-size: 1.4em;
+	margin-bottom: 20px;
+}
+
+.div_main_content p{
+	color: #000;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+.div_main_content h3{
+	background-color: #b8312f;
+	color: #fff;
+	text-align: center;
+	font-weight: 200;
+}
+
+/*Cotações*/
+
+.div_cot_txt, .div_cot_form{
+	background-color: rgba(255,255,255,0.5);
+	margin-top: 20px;
+	padding: 20px;
+}
+
+.div_cot_form{
+	height: 450px;
+}
+
+.div_cot_txt h1, .div_cot_txt p, .div_cot_form label{
+	font-family: 'Ek Mukta', sans-serif;
+}
+
+.div_cot_txt h1{
+	color: #f00;
+	margin-bottom: 20px;
+}
+
+.div_cot_txt p{
+	color: black;
+	font-size: 1.3em;
+	font-weight: 600;
+	text-align: justify;
+}
+
+.div_cot_form input{
+	margin-top: 20px;
+	height: 30px;
+	border: 1px solid red;
+	width: 100%;
+}
+
+.div_cot_form label{
+	color: #000;
+	font-size: 1.2em;
+	margin-top: 20px;
+}
+
+.div_cot_form img{
+	width: 40px;
 }
