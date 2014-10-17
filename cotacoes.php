@@ -27,85 +27,110 @@
                  <div class="div_cot_form">
                     <form action="" name="cotacao" id="cotacao">
                         
+                        <fieldset class="fieldset_left">                        
+
                         <div class="div_cot_form_left grid_5">
-                        
-                            <div>
-                            <label for="nome">Nome/Empresa:</label>
-                            <input type="text" name="nome" id="nome" class="alpha grid_5" />
-                            </div>
-
-                            <div>
-                            <label for="email">Email:</label>
-                            <input type="text" name="email" id="email" class="alpha grid_3" />
                             
+                            <dl>
+                                <dt>
+                                    <label for="nome">Nome/Empresa:</label>
+                                </dt>
+                                <dt>
+                                    <input type="text" name="nome" id="nome" class="alpha grid_5" />
+                                </dt>
+                            </dl>
+                            
+                            <dl style="float:left; width: 47%;">
+                                <dt>
+                            <label for="email">Email:</label>
+                                </dt>
+                                <dt>
+                            <input type="text" name="email" id="email" class="alpha" />
+                                </dt>
+                            </dl>
+
+                            <dl style="width: 47%; float:right;">
+                            <dt>
                             <label for="tel">Telefone:</label>
-                            <input type="text" name="tel" id="tel" class="alpha grid_3" />
-                            </div>
-
-                            <div>
+                            </dt>
+                            <dt>
+                            <input type="text" name="tel" id="tel" class="alpha" />
+                            </dt>
+                            </dl>
+                            
+                            <dl>
+                            <dt>
                             <label for="origem">Origem:</label>
+                            </dt>                         
+
+                            <dt>
                             <input type="text" name="origem" id="origem" class="alpha grid_5" />
-                            </div>
-
-                            <div>
+                            </dt>
+                            </dl>
+                            
+                            <dl>
+                            <dt>
                             <label for="destino">Destino:</label>
+                            </dt>                       
+                            <dt>
                             <input type="text" name="destino" id="destino" class="alpha grid_5" />
-                            </div>
-
-                            <div>
+                            </dt>
+                            </dl>     
+                            
+                            <dl>
+                                <dt>
                             <label for="destinatario">Destinatário:</label>
+                                </dt>
+                                <dt>
                             <input type="text" name="destinatario" id="destinatario" class="alpha grid_5" />
-                            </div>
-
-                            <div>
-                            <label for="descricao">Descricao:</label>
+                                </dt>
+                            </dl>
+                            
+                            <label for="descricao">Descricao:
                             <textarea name="descricao" id="descricao" class="alpha grid_5"></textarea>
-                            </div>
+                            </label>
 
                         </div>
 
-                        <div class="div_cor_form_right grid_6">
+                        </fieldset>
+
+                        <fieldset class="fieldset_right">
+
+                        <div class="div_cor_form_right grid_6">                        
                         
-                        <div>
-                        <label for="valor">Valor Declarado:</label>
+                        <label for="valor">Valor Declarado:
                         <input type="text" name="valor" id="valor" class="alpha grid_4" />
-                        </div>
-
-                        <div>
-                        <label for="seguro">Seguro Prório?</label>
+                        </label>
+                                                
+                        <label for="seguro">Seguro Prório?
                         <input type="text" name="seguro" id="seguro" class="alpha grid_2" />
-                        </div>
-
-                        <div>
-                        <label for="peso_bruto">Peso Bruto(kg):</label>
+                        </label>
+                                                
+                        <label for="peso_bruto">Peso Bruto(kg):
                         <input type="text" name="peso_bruto" id="peso_bruto" class="alpha grid_3" />
-                        </div>
-
-                        <div>
-                        <label for="qtde_volumes">Quantidade de Volumes:</label>
+                        </label>
+                       
+                        <label for="qtde_volumes">Quantidade de Volumes:
                         <input type="text" name="qtde_volumes" id="qtde_volumes" class="alpha grid_3" />                        
-                        </div>
-
-                        <div>
-                        <label for="largura">Largura:</label>
+                        </label>
+                        
+                        <label for="largura">Largura:
                         <input type="text" name="largura" id="largura" class="alpha grid_2" />
-                        </div>
-
-                        <div>
-                        <label for="altura">Altura:</label>
+                        </label>
+                        
+                        <label for="altura">Altura:
                         <input type="text" name="altura" id="altura" class="alpha grid_2" />
-                        </div>
-
-                        <div>
-                        <label for="comprimento">Comprimento:</label>
+                        </label>
+                        
+                        <label for="comprimento">Comprimento:
                         <input type="text" name="comprimento" id="comprimento" class="alpha grid_2" />
-                        </div>
-
-                        <div>
-                        <label for="peso_cubado">Peso Cubado:</label>
+                        </label>
+                        
+                        <label for="peso_cubado">Peso Cubado:
                         <input type="text" name="peso_cubado" id="peso_cubado" class="alpha grid_3" />
+                        </label>
                         <img src="img/calc.png" />
-                        </div>
+                        
 
                         <div class="form_buttons grid_4">
                             <button class="alpha grid_2">Cancelar</button>
@@ -113,6 +138,7 @@
                         </div>
 
                         </div>
+                        </fieldset>
 
                     </form>
                  </div>
