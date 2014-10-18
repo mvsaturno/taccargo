@@ -27,7 +27,7 @@
                  <div class="div_cot_form">
                     <form action="" name="cotacao" id="cotacao">
                         
-                        <fieldset class="fieldset_left">                        
+                        <fieldset class="fieldset_left" style="width: 450px;">
 
                         <div class="div_cot_form_left grid_5">
                             
@@ -94,47 +94,92 @@
 
                         </fieldset>
 
-                        <fieldset class="fieldset_right">
+                        <fieldset class="fieldset_right" style="width: 450px;">
 
-                        <div class="div_cor_form_right grid_6">                        
+                        <div class="div_cor_form_right">                        
                         
-                        <label for="valor">Valor Declarado:
-                        <input type="text" name="valor" id="valor" class="alpha grid_4" />
-                        </label>
-                                                
-                        <label for="seguro">Seguro Prório?
-                        <input type="text" name="seguro" id="seguro" class="alpha grid_2" />
-                        </label>
-                                                
-                        <label for="peso_bruto">Peso Bruto(kg):
-                        <input type="text" name="peso_bruto" id="peso_bruto" class="alpha grid_3" />
-                        </label>
+                            <dl style="width:70%; float:left;">
+                                <dt>
+                                    <label for="valor">Valor Declarado:</label>
+                                </dt>
+                                <dt>
+                                    <input type="text" name="valor" id="valor" class="alpha" />
+                                </dt>
+                            </dl>
+
+
+                        <dl style="width:25%; float:right;">
+                            <dt>
+                            <label for="seguro">Seguro Prório?</label>
+                            </dt>
+                            <dt>
+                            <select name="seguro" id="seguro" class="alpha">
+                                <option value="nao">Não</option>
+                                <option value="sim">Sim</option>
+                            </select>
+                            </dt>
+                        </dl>                                                
+                            
+                        <dl style="float:left; width: 47%;">
+                            <dt>
+                            <label for="peso_bruto">Peso Bruto(kg):</label>
+                            </dt>
+                            <dt>
+                            <input type="text" name="peso_bruto" id="peso_bruto" class="alpha" />
+                            </dt>
+                        </dl>                    
                        
-                        <label for="qtde_volumes">Quantidade de Volumes:
-                        <input type="text" name="qtde_volumes" id="qtde_volumes" class="alpha grid_3" />                        
-                        </label>
+                        <dl style="float:right; width: 47%;">
+                            <dt>
+                        <label for="qtde_volumes">Quantidade de Volumes:</label>
+                            </dt>
+                            <dt>
+                        <input type="text" name="qtde_volumes" id="qtde_volumes" class="alpha" />
+                            </dt>
+                        </dl>
                         
-                        <label for="largura">Largura:
-                        <input type="text" name="largura" id="largura" class="alpha grid_2" />
-                        </label>
+                        <dl style="width: 30%; float:left;">
+                            <dt>
+                        <label for="largura">Largura:</label>
+                            </dt>
+                            <dt>
+                        <input type="text" name="largura" id="largura" class="alpha" />
+                            </dt>
+                        </dl>
                         
-                        <label for="altura">Altura:
+                        <dl style="width: 30%; float:left; margin-left: 5%">
+                            <dt>
+                        <label for="altura">Altura:</label>
+                            </dt>
+                            <dt>
                         <input type="text" name="altura" id="altura" class="alpha grid_2" />
-                        </label>
+                            </dt>
+                        </dl>
                         
-                        <label for="comprimento">Comprimento:
+                        <dl style="width: 30%; float:left; margin-left: 5%">
+                            <dt>
+                        <label for="comprimento">Comprimento:</label>
+                            </dt>
+                            <dt>
                         <input type="text" name="comprimento" id="comprimento" class="alpha grid_2" />
-                        </label>
+                            </dt>
+                        </dl>
                         
-                        <label for="peso_cubado">Peso Cubado:
+                        <dl style="width:70%">
+                            <dt>
+                        <label for="peso_cubado">Peso Cubado:</label>
+                            </dt>
+                            <dt>
                         <input type="text" name="peso_cubado" id="peso_cubado" class="alpha grid_3" />
-                        </label>
                         <img src="img/calc.png" />
+                            </dt>
+                        </dl>
                         
+                        <p class="form_msg">Para mercadoria com volumes diferentes utilize nossa calculadora para peso cubado</p>
 
-                        <div class="form_buttons grid_4">
-                            <button class="alpha grid_2">Cancelar</button>
+                        <div class="form_buttons">
                             <input type="submit" class="alpha grid_2" value="Enviar" />
+                            <button class="alpha grid_2">Cancelar</button>
                         </div>
 
                         </div>

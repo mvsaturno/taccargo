@@ -159,6 +159,11 @@
 
 /*Cotações*/
 
+.fieldset_left{
+	float: left;
+	margin-left: 1%;
+}
+
 .div_cot_txt, .div_cot_form{
 	background-color: rgba(255,255,255,0.5);
 	margin-top: 20px;
@@ -167,6 +172,7 @@
 
 .div_cot_form{
 	height: 450px;
+	position: relative;
 }
 
 .div_cot_txt h1, .div_cot_txt p, .div_cot_form label{
@@ -185,8 +191,9 @@
 	text-align: justify;
 }
 
-.div_cot_form input{
-	margin-top: 20px;
+.div_cot_form input, .div_cot_form textarea, .div_cot_form select {
+	margin-top: 10px;
+	margin-bottom: 10px;
 	height: 30px;
 	border: 1px solid red;
 	width: 100%;
@@ -199,5 +206,51 @@
 }
 
 .div_cot_form img{
-	width: 40px;
+	width: 30px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.form_msg{
+	margin-top: 20px;
+	margin-bottom: 20px;	
+	color: black;
+	width: 60%;
+	font-size: 1.1em;
+	font-weight: 600;
+	font-family: 'Ek Mukta', sans-serif;
+	/*text-align: justify;*/
+}
+
+.form_buttons{
+	height: 30px;
+	position: absolute;
+	bottom: 40px;
+	right: 10px;
+}
+
+.div_cot_form button{
+	float: right;
+	height: 30px;
+	width: 140px;
+	background-color: #f00;
+	border: 0;
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: 600;
+	font-family: 'Ek Mukta', sans-serif;
+}
+
+.div_cot_form input[type="submit"]{
+	float: right;
+	height: 30px;
+	width: 140px;
+	background-color: #0f0;
+	border: 0;
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: 600;
+	font-family: 'Ek Mukta', sans-serif;
+	margin-top: 0;
+	margin-right: 20px;
 }
