@@ -1,9 +1,9 @@
 <div id="div_topo">
     <div id="div_topo_content" class="container_12">
-        <div id="div_logo" class="grid_4">
+        <div id="div_logo" class="grid_3">
             <a href="index.php"><img src="img/logo_taccargo.png"></a>
         </div>
-        <div id="div_menu" class="grid_8 push_5">
+        <div id="div_menu" class="grid_8 push_1">
             <ul id="menu">
                 <li id="menu_empresa"><a href="empresa.php">Empresa</a></li>
                 <li id="menu_servicos"><a href="servicos.php">Serviços</a></li>

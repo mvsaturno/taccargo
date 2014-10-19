@@ -16,7 +16,7 @@
         <?php include 'top_menu.php'; ?>
         <div id="div_main_container">
             <div id="div_main_index" class="container_12">
-                <div id="div_main_banner" class="theme-light">
+                <div id="div_main_banner" class="slider-wrapper theme-light">
                     <div id="slider" class="nivo_slider">
                         <img src="img/slider1.jpg" data-thumb="img/slider1.jpg" style="visibility: hidden; display: inline; width: 1115px;" />
                         <img src="img/slider2.jpg" data-thumb="img/slider2.jpg" data-transition="slideInLeft" style="visibility: hidden; display: inline; width: 1115px;" />
