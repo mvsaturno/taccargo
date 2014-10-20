@@ -1,6 +1,7 @@
 <div id="div_topo">
     <div id="div_topo_content" class="container_12">
         <div id="div_logo" class="grid_3">
+            <span class="helper"></span>
             <a href="index.php"><img src="img/logo_taccargo.png"></a>
         </div>
         <div id="div_menu" class="grid_8 push_1">

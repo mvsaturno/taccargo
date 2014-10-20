@@ -5,18 +5,24 @@
 @import 'reset.css';
 @import 'text.css';
 
+.float_right{
+    float: right;
+}
+
+.float_left{
+    float: left;
+}
+
 /*======Containers===========================================*/
 #div_bottom_content, #div_topo_content, #div_main_index, #div_main_container{
     margin: 0 auto;
 }
 
 #div_main_container{
-	height: 780px;
 	background-image: url('../img/bg_web.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	/*Essa balaca aqui ia ficar mto legal: */
-	/*background-attachment: fixed;*/
+	background-attachment: fixed;
 }
 
 
@@ -54,20 +60,25 @@
   font-family: 'Ek Mukta', sans-serif;
   font-weight: 200;
   font-size: 2em;
-  /*padding-right: 10px;*/
-  /*padding-top: 10px;*/
 }
 #menu li:hover a{
 	color: #fff;
 }
 #div_logo{
-	float: left;
-	border-bottom: 30px;
-	margin-top: 15px;
+    float: left;
+    margin: 10px;
+    height: 140px;
+}
+
+.helper{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 
 #div_logo img{
-	width: 100%;
+        vertical-align: middle;
+	width: 95%;
 }
 
 #div_topo{
@@ -82,24 +93,25 @@
 #div_bottom{
 	background-color: #b8312f;
 	color: #fff;
-        padding: 10px;
+        padding: 15px;
 }
 
-#div_bottom_text{
-	float: left;
+#div_bottom_text a{
+    margin-left: 10px;
 }
 
 #div_bottom_text p{
 	margin-top: 10px;
-	font-size: 1.1em;
+	font-size: 1.4em;
+        line-height: 1em;
 }
 
 #div_bottom_text img{
 	width: 20px;
 }
 
-#div_bottom_social{
-	float: right;
+#div_bottom_social a{
+    margin-right: 10px;
 }
 
 #div_bottom_social ul{
@@ -118,30 +130,42 @@
 }
 
 #div_bottom_social li img{
-	/*width: 50px;*/
+    width: 50px;
+}
+#div_siganos{
+    float: right;
+    width: 180px;
 }
 
 #social_icons{
-	float: right;
+    
 }
 
 /*======Páginas===========================================*/
 
 /* Index */
 #div_main_banner{
+        width: 100%;
 	margin-top: 15px;
+        max-height: 350px;
 }
-
+#slider{
+    max-height: 300px
+}
 .div_main_content{
 	margin-top: 15px;
-	background-color: rgba(255,255,255,0.5);
+	background-color: rgba(255,255,255,0.8);
 	margin-bottom: 35px;
 }
-
+.div_main_content_txt{
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    padding: 10px;
+}
 .div_main_content img{
-	margin-top: 20px;
-	margin-bottom: 20px;
-	/*border: 5px solid white inset;*/
+	border: 10px solid white;
+        width: 90%;
 }
 
 .div_main_content a{
@@ -149,21 +173,27 @@
 	font-weight: bold;
 	text-decoration: none;
 	float: right;
-	font-size: 1.4em;
+	font-size: 1.6em;
 	margin-bottom: 20px;
+        margin-right: 10px;
 }
 
 .div_main_content p{
 	color: #000;
-	font-size: 1.4em;
-	font-weight: bold;
+	font-size: 1.5em;
+	font-weight: 500;
 }
-
+.main_text{
+    padding:15px
+}
 .div_main_content h3{
 	background-color: #b8312f;
 	color: #fff;
 	text-align: center;
 	font-weight: 200;
+        margin-bottom: 10px;
+        padding: 5px;
+        font-size: 2.0em;
 }
 
 /*Cotações*/
