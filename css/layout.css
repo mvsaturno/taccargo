@@ -48,7 +48,7 @@
     padding: 10px;
 }
 
-#menu li:hover{
+#menu li:hover, .menu_active{
 	background-color: #b8312f;
 	color: #fff;
 }
@@ -61,7 +61,7 @@
   font-weight: 200;
   font-size: 2em;
 }
-#menu li:hover a{
+#menu li:hover a, #menu .menu_active a{
 	color: #fff;
 }
 #div_logo{
@@ -78,7 +78,7 @@
 
 #div_logo img{
         vertical-align: middle;
-	width: 95%;
+	width: 90%;
 }
 
 #div_topo{
@@ -178,7 +178,7 @@
         margin-right: 10px;
 }
 
-.div_main_content p{
+.div_main_content p, #div_empresa p , #div_servicos p, #div_servicos li{
 	color: #000;
 	font-size: 1.5em;
 	font-weight: 500;
@@ -196,8 +196,54 @@
         font-size: 2.0em;
 }
 
-/*Cotações*/
+/*Empresa*/
+#div_empresa, #div_servicos{
+    width: 100%;
+    margin-top: 15px;
+    background-color: rgba(255,255,255,0.8);
+     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    padding: 15px;
+}
 
+#div_empresa p, #div_empresa h1, #div_servicos p, #div_servicos h1{
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+#image_empresa{
+    border: 10px solid white;
+    width: 30%;
+    margin: 0 50px 50px 50px;
+    float: right;
+}
+
+/* Serviços */
+#div_servicos #div_textos_servicos{
+    float: left;
+    width: 45%;
+}
+
+#div_itens_servicos{
+    float: right;
+    margin-right: 10%;
+    margin-top: 12px;
+}
+
+#div_itens_servicos h2{
+    color: #078C2E;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#div_itens_servicos li{
+    list-style: disc;
+    margin-left: 10px;
+    list-style-position: inside;
+}
+
+/*Cotações*/
 .fieldset_left{
 	float: left;
 	margin-left: 1%;

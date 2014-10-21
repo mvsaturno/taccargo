@@ -41,3 +41,11 @@ var ADAPT_CONFIG = {
 <link href=imagens/favicon.ico rel="shortcut icon" />
 <!-- ===================== Head ===================== -->
 <title>TacCargo</title>
+<?php
+
+    $menu['empresa'] = "";
+    $menu['servicos'] = "";
+    $menu['cotacoes'] = "";
+    $menu['coletas'] = "";
+    $menu['links'] = "";
+    $menu['contato'] = ""; ?>
