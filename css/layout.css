@@ -245,8 +245,13 @@
 
 /*Cotações*/
 .fieldset_left{
+	width: 550px;
 	float: left;
 	margin-left: 1%;
+}
+
+.fieldset_right{
+	width: 550px;
 }
 
 .div_cot_txt, .div_cot_form{
@@ -338,4 +343,37 @@
 	font-family: 'Ek Mukta', sans-serif;
 	margin-top: 0;
 	margin-right: 20px;
+}
+
+.form_input_half{
+	width: 47%;
+}
+	
+.form_fl_right{
+	float: right;
+}
+
+.form_fl_left{
+	float:left; 
+}
+
+.form_input_70{
+	width:70%; 
+}
+
+.form_input_25{
+	width:25%; 
+	float:right;
+}
+
+.form_input_third_last{
+	margin-right: 15px;
+	width: 30%; 
+	float:right; 
+}
+
+.form_input_third{
+	width: 30%; 
+	float:left; 
+	margin-right: 2.3%
 }

@@ -27,7 +27,7 @@
                  <div class="div_cot_form">
                     <form action="" name="cotacao" id="cotacao">
                         
-                        <fieldset class="fieldset_left" style="width: 450px;">
+                        <fieldset class="fieldset_left">
 
                         <div class="div_cot_form_left grid_5">
                             
@@ -40,7 +40,7 @@
                                 </dt>
                             </dl>
                             
-                            <dl style="float:left; width: 47%;">
+                            <dl class="form_input_half form_fl_left">
                                 <dt>
                             <label for="email">Email:</label>
                                 </dt>
@@ -49,7 +49,7 @@
                                 </dt>
                             </dl>
 
-                            <dl style="width: 47%; float:right;">
+                            <dl class="form_input_half form_fl_right">
                             <dt>
                             <label for="tel">Telefone:</label>
                             </dt>
@@ -94,11 +94,11 @@
 
                         </fieldset>
 
-                        <fieldset class="fieldset_right" style="width: 450px;">
+                        <fieldset class="fieldset_right">
 
                         <div class="div_cor_form_right">                        
                         
-                            <dl style="width:70%; float:left;">
+                            <dl class="form_input_70 form_fl_left">
                                 <dt>
                                     <label for="valor">Valor Declarado:</label>
                                 </dt>
@@ -108,7 +108,7 @@
                             </dl>
 
 
-                        <dl style="width:25%; float:right;">
+                        <dl class="form_input_25">
                             <dt>
                             <label for="seguro">Seguro Prório?</label>
                             </dt>
@@ -120,7 +120,7 @@
                             </dt>
                         </dl>                                                
                             
-                        <dl style="float:left; width: 47%;">
+                        <dl class="form_input_half form_fl_left">
                             <dt>
                             <label for="peso_bruto">Peso Bruto(kg):</label>
                             </dt>
@@ -129,7 +129,7 @@
                             </dt>
                         </dl>                    
                        
-                        <dl style="float:right; width: 47%;">
+                        <dl class="form_input_half form_fl_right">
                             <dt>
                         <label for="qtde_volumes">Quantidade de Volumes:</label>
                             </dt>
@@ -138,7 +138,7 @@
                             </dt>
                         </dl>
                         
-                        <dl style="width: 30%; float:left;">
+                        <dl class="form_input_third">
                             <dt>
                         <label for="largura">Largura:</label>
                             </dt>
@@ -147,7 +147,7 @@
                             </dt>
                         </dl>
                         
-                        <dl style="width: 30%; float:left; margin-left: 5%">
+                        <dl class="form_input_third">
                             <dt>
                         <label for="altura">Altura:</label>
                             </dt>
@@ -156,7 +156,7 @@
                             </dt>
                         </dl>
                         
-                        <dl style="width: 30%; float:left; margin-left: 5%">
+                        <dl class="form_input_third_last">
                             <dt>
                         <label for="comprimento">Comprimento:</label>
                             </dt>
@@ -165,7 +165,7 @@
                             </dt>
                         </dl>
                         
-                        <dl style="width:70%">
+                        <dl class="form_input_70 form_fl_left">
                             <dt>
                         <label for="peso_cubado">Peso Cubado:</label>
                             </dt>
@@ -175,7 +175,7 @@
                             </dt>
                         </dl>
                         
-                        <p class="form_msg">Para mercadoria com volumes diferentes utilize nossa calculadora para peso cubado</p>
+                        <p class="form_msg form_fl_left">Para mercadoria com volumes diferentes utilize nossa calculadora para peso cubado</p>
 
                         <div class="form_buttons">
                             <input type="submit" class="alpha grid_2" value="Enviar" />
