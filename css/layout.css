@@ -244,26 +244,29 @@
 }
 
 /*Cotações*/
-.fieldset_left{
-	width: 550px;
-	float: left;
-	margin-left: 1%;
+#cotacao .fieldset_left{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
 
-.fieldset_right{
-	width: 550px;
+#cotacao .fieldset_right{
+    margin-top: 20px;
 }
 
-.div_cot_txt, .div_cot_form{
-	background-color: rgba(255,255,255,0.5);
+.div_cot_txt{
+	background-color: rgba(255,255,255,0.8);
 	margin-top: 20px;
 	padding: 20px;
 }
 
 .div_cot_form{
-	height: 450px;
-	position: relative;
+    background-color: rgba(255,255,255,0.8);
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
+
 
 .div_cot_txt h1, .div_cot_txt p, .div_cot_form label{
 	font-family: 'Ek Mukta', sans-serif;
@@ -281,14 +284,23 @@
 	text-align: justify;
 }
 
-.div_cot_form input, .div_cot_form textarea, .div_cot_form select {
+.div_cot_form input[type='text'], .div_cot_form textarea, .div_cot_form select {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	height: 30px;
 	border: 1px solid red;
-	width: 100%;
+	width: 98%;
+        font-family: 'Ek Mukta', sans-serif;
+        font-size: 1.2em;
+        padding-left: 5px;
 }
-
+.div_cot_form textarea{
+    min-height: 60px;
+    font-size: 1em;
+}
+.div_cot_form select{
+    height: 34px;
+}
 .div_cot_form label{
 	color: #000;
 	font-size: 1.2em;
@@ -302,55 +314,43 @@
 }
 
 .form_msg{
-	margin-top: 20px;
 	margin-bottom: 20px;	
 	color: black;
-	width: 60%;
+	width: 95%;
 	font-size: 1.1em;
 	font-weight: 600;
 	font-family: 'Ek Mukta', sans-serif;
-	/*text-align: justify;*/
 }
 
 .form_buttons{
-	height: 30px;
-	position: absolute;
-	bottom: 40px;
-	right: 10px;
+    margin: 12% 10px 20px auto;
+    float: right;
 }
 
-.div_cot_form button{
-	float: right;
-	height: 30px;
-	width: 140px;
-	background-color: #b8312f;
+.form_buttons input{
+	padding: 5px 15px;
 	border: 0;
 	color: #fff;
-	font-size: 1.1em;
+	font-size: 1.5em;
 	font-weight: 600;
+        margin-left: 15px;
 	font-family: 'Ek Mukta', sans-serif;
+}
+.div_cot_form input[type="reset"]{
+	background-color: #b8312f;
 }
 
 .div_cot_form input[type="submit"]{
-	float: right;
-	height: 30px;
-	width: 140px;
 	background-color: #078C2E;
-	border: 0;
-	color: #fff;
-	font-size: 1.1em;
-	font-weight: 600;
-	font-family: 'Ek Mukta', sans-serif;
-	margin-top: 0;
-	margin-right: 20px;
 }
 
 .form_input_half{
-	width: 47%;
+	width: 48%;
 }
 	
 .form_fl_right{
-	float: right;
+	float: left;
+        margin-left: 3%;
 }
 
 .form_fl_left{
@@ -362,18 +362,19 @@
 }
 
 .form_input_25{
-	width:25%; 
-	float:right;
-}
-
-.form_input_third_last{
-	margin-right: 15px;
-	width: 30%; 
-	float:right; 
+	width:26%; 
+	float:left;
+        margin-left: 3%;
 }
 
 .form_input_third{
-	width: 30%; 
+	margin-right: 3%;
+	width: 31%;
 	float:left; 
-	margin-right: 2.3%
+}
+
+#div_img_calc{
+    margin-top: 21px;
+    float:left;
+    margin-left: 5px;
 }
