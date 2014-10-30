@@ -244,13 +244,13 @@
 }
 
 /*Cotações*/
-#cotacao .fieldset_left{
+#cotacao .fieldset_left, #coleta .fieldset_left{
     margin-top: 20px;
     margin-left: 20px;
     margin-bottom: 10px;
 }
 
-#cotacao .fieldset_right{
+#cotacao .fieldset_right, #coleta .fieldset_right{
     margin-top: 20px;
 }
 
@@ -260,7 +260,7 @@
 	padding: 20px;
 }
 
-.div_cot_form{
+.div_cot_form, .div_col_form{
     background-color: rgba(255,255,255,0.8);
     margin-top: 20px;
     margin-bottom: 20px;
@@ -377,4 +377,14 @@
     margin-top: 21px;
     float:left;
     margin-left: 5px;
+}
+
+/*Coletas*/
+#coleta textarea{
+    height: 140px;
+}
+
+#coleta .form_buttons{
+    margin: 1% 10px 20px auto;
+    float: right;
 }
