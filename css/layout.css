@@ -23,6 +23,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+        min-height: 671px;
 }
 
 
@@ -180,8 +181,8 @@
 
 .div_main_content p, #div_empresa p , #div_servicos p, #div_servicos li{
 	color: #000;
-	font-size: 1.5em;
-	font-weight: 500;
+	font-size: 1.4em;
+	font-weight: 400;
 }
 .main_text{
     padding:15px
@@ -260,7 +261,7 @@
 	padding: 20px;
 }
 
-.div_cot_form, .div_col_form{
+.div_cot_form, .div_col_form, .div_links{
     background-color: rgba(255,255,255,0.8);
     margin-top: 20px;
     margin-bottom: 20px;
@@ -280,7 +281,7 @@
 .div_cot_txt p{
 	color: black;
 	font-size: 1.3em;
-	font-weight: 600;
+	font-weight: 500;
 	text-align: justify;
 }
 
@@ -387,4 +388,42 @@
 #coleta .form_buttons{
     margin: 1% 10px 20px auto;
     float: right;
+}
+
+/*Links Úteis*/
+.link_util{
+    margin-top:20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.link_util h4{
+    color: black;
+    font-family: 'Ek Mukta', sans-serif;
+    font-size: 1.7em;
+}
+
+.link_util h5{
+    margin-bottom: 5px;
+}
+
+.link_util h5 a{
+    color: #b8312f;
+    font-family: 'Ek Mukta', sans-serif;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+    text-decoration: none;
+    font-weight: normal;
+}
+.link_util h5 a:hover{
+    text-decoration: underline;
+}
+
+.link_util p{
+    color:black;
+    font-size: 1.3em;
+}
+#div_img_site{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

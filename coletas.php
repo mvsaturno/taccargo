@@ -149,7 +149,7 @@
 
                                 <dl class="form_input_25">
                                     <dt>
-                                    <label for="horario">Hor&aacute;rio m&aacute;ximo de coleta:</label>
+                                    <label for="horario">Hora m&aacute;x. de coleta:</label>
                                     </dt>
                                     <dt>
                                     <select name="horario" id="seguro" class="">
