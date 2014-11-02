@@ -142,7 +142,7 @@
                                     <label for="data">Data da coleta:</label>
                                     </dt>
                                     <dt>
-                                    <input type="text" name="valor" id="valor" class="" />
+                                    <input type="text" name="data" id="data" class="" />
                                     </dt>
                                 </dl>
 
@@ -284,9 +284,8 @@
                                 <div id="div_img_calc"><img src="img/calc.png" id="img_calc"/></div>
                                 <p class="form_msg form_fl_left">Para mercadoria com volumes diferentes utilize nossa calculadora para peso cubado</p>
                                 <div class="clear"></div>
-                                <label for="observacao">Observa&ccedil;&atilde;o:
+                                <label for="observacao">Observa&ccedil;&atilde;o:</label>
                                     <textarea name="observacao" id="observacao" class=""></textarea>
-                                </label>
                                 <div class="clear"></div>
                                 <div class="form_buttons">
                                     <input type="reset" value="Cancelar" />

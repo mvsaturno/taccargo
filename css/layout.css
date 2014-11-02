@@ -245,7 +245,7 @@
 }
 
 /*Cotações*/
-#cotacao .fieldset_left, #coleta .fieldset_left{
+#cotacao .fieldset_left, #coleta .fieldset_left, #contato .fieldset_left{
     margin-top: 20px;
     margin-left: 20px;
     margin-bottom: 10px;
@@ -261,7 +261,7 @@
 	padding: 20px;
 }
 
-.div_cot_form, .div_col_form, .div_links{
+.div_cot_form, .div_col_form, .div_links, .div_contato_form{
     background-color: rgba(255,255,255,0.8);
     margin-top: 20px;
     margin-bottom: 20px;
@@ -269,7 +269,7 @@
 
 
 
-.div_cot_txt h1, .div_cot_txt p, .div_cot_form label{
+.div_cot_txt h1, .div_cot_txt p, .div_cot_form label, .div_contato_form label{
 	font-family: 'Ek Mukta', sans-serif;
 }
 
@@ -285,7 +285,7 @@
 	text-align: justify;
 }
 
-.div_cot_form input[type='text'], .div_cot_form textarea, .div_cot_form select {
+.div_cot_form input[type='text'], .div_cot_form textarea, .div_cot_form select, .div_contato_form textarea, .div_contato_form input[type='text'] {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	height: 30px;
@@ -302,7 +302,7 @@
 .div_cot_form select{
     height: 34px;
 }
-.div_cot_form label{
+.div_cot_form label, .div_contato_form label{
 	color: #000;
 	font-size: 1.2em;
 	margin-top: 20px;
@@ -337,11 +337,11 @@
         margin-left: 15px;
 	font-family: 'Ek Mukta', sans-serif;
 }
-.div_cot_form input[type="reset"]{
+.div_cot_form input[type="reset"], .div_contato_form input[type="reset"]{
 	background-color: #b8312f;
 }
 
-.div_cot_form input[type="submit"]{
+.div_cot_form input[type="submit"], .div_contato_form input[type="submit"]{
 	background-color: #078C2E;
 }
 
@@ -360,6 +360,14 @@
 
 .form_input_70{
 	width:70%; 
+}
+.form_input_70 img{
+    margin-top: 0;
+    margin-left: 5px;
+}
+
+.form_input_70 input[type='text']{
+	width:90%; 
 }
 
 .form_input_25{
@@ -419,11 +427,46 @@
     text-decoration: underline;
 }
 
-.link_util p{
+.link_util p, #endereco p{
     color:black;
     font-size: 1.3em;
 }
 #div_img_site{
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+/*Contato*/
+.div_contato_form textarea{
+    height: 120px;
+}
+
+#contato .form_buttons{
+    margin: 10px 10px 20px auto;
+    float: right;
+}
+#endereco h4{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 3%;
+}
+#map iframe{
+    width: 94%;
+    height: 490px;
+    margin-left: 3%;
+}
+#endereco p{
+    color:black;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+    margin-left: 3%;
+}
+
+#endereco p a{
+    color:black;
+    text-decoration: none;
+}
+#endereco p a:hover{
+    color:#b8312f;
+    text-decoration: underline;
 }

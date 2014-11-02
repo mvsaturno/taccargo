@@ -4,10 +4,12 @@
 <meta http-equiv="pragma" content="no-cache">
 
 <!-- ===================== css ===================== -->
+<link rel="stylesheet" href="css/taccargo-theme/jquery-ui-1.9.2.custom.css" type="text/css" media="all" />
 <link rel="stylesheet" href="css/960.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/layout.css" type="text/css">
 <!-- ===================== scripts ===================== -->
 <script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/jquery-ui-1.9.2.custom.min.js" type="text/javascript"></script>
 <noscript>
 <link rel="stylesheet" href="css/adapt/mobile.min.css" />
 </noscript>
@@ -36,6 +38,7 @@ var ADAPT_CONFIG = {
 };
 </script>
 <script src="js/adapt.min.js"></script>
+<script src="js/scripts.js" type="text/javascript"></script>
 <!-- <script src="js/scripts.js" type="text/javascript"></script> -->
 <!-- ===================== favicon ===================== -->
 <link href=imagens/favicon.ico rel="shortcut icon" />
