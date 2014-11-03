@@ -31,7 +31,7 @@
                     <h3>Empresa</h3>
                     <div class="div_main_content_txt" >
                         <p class="align_center"><img src="img/small_truck.jpg"></p>
-                        <p class="main_text">Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.</p>
+                        <p class="main_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies arcu tellus. Quisque quis turpis vel risus convallis sodales non at purus.</p>
                         <a href="#">Saiba Mais</a>
                     
                     </div> 
@@ -41,7 +41,7 @@
                    <h3>Servi&ccedil;os</h3>
                     <div class="div_main_content_txt" >
                         <p class="align_center"><img src="img/small_truck.jpg"></p>
-                        <p class="main_text">Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.</p>
+                        <p class="main_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies arcu tellus. Quisque quis turpis vel risus convallis sodales non at purus.</p>
                         <a href="#">Saiba Mais</a>
                     
                     </div> 
@@ -51,7 +51,7 @@
                    <h3>Cota&ccedil;&otilde;es</h3>
                     <div class="div_main_content_txt" >
                         <p class="align_center"><img src="img/small_truck.jpg"></p>
-                        <p class="main_text">Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.</p>
+                        <p class="main_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies arcu tellus. Quisque quis turpis vel risus convallis sodales non at purus.</p>
                         <a href="#">Saiba Mais</a>
                     
                     </div> 
