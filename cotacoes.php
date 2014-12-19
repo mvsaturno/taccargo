@@ -14,11 +14,7 @@
             <div class="container_12">
                  <div class="div_cot_txt">
                     <h1>Cotações</h1>
-                    <p>Mais um serviço on-line para agilizar e facilitar o relacionamento da TAC Cargo com seus clientes. 
-                        O orçamento do valor do frete depende de algumas variáveis como origem, destino, tipo de carga
-                        (características), valor da Nota Fiscal e o peso da carga. Aproveite e envie agora mesmo uma 
-                        solicitação de cotação de transporte de mercadorias direto para a TAC Cargo, preenchendo 
-                        todos os campos do formulário abaixo.</p>
+                    <p>Mais um serviço on-line para agilizar e facilitar o relacionamento da TAC Cargo com seus clientes. O orçamento do valor do frete depende de algumas variáveis como origem, destino, tipo de carga (características), valor da Nota Fiscal e o peso da carga. Aproveite e envie agora mesmo uma solicitação de cotação de transporte de mercadorias direto para a TAC Cargo, preenchendo todos os campos do formulário abaixo.</p>
                  </div>
                  <div class="div_cot_form">
                         <form action="" name="cotacao" id="cotacao">

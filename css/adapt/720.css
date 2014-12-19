@@ -355,3 +355,32 @@ body {
 .container_12 {
   zoom: 1;
 }
+
+.container_12 #div_logo.grid_3{
+    width:280px
+}
+
+#menu{
+    width: 300px;
+}
+
+#menu a{
+    font-size: 1.6em
+}
+
+#div_menu.push_1{
+    width: 400px;
+    left: 0
+}
+
+#div_bottom_text p{
+	font-size: 1.2em;
+}
+
+#brakeLine{
+    display:inline;
+}
+
+.img_link_util{
+    width: 320px;
+}

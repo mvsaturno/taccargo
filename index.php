@@ -9,6 +9,11 @@
         <script type="text/javascript">
             $(window).load(function() {
                 $('#slider').nivoSlider();
+                  $.colorbox({
+                        inline: true,
+                        href:"#pop_up",
+                        open: true
+                  });
             });
         </script>
     </head>
@@ -40,7 +45,7 @@
                <div class="div_main_content grid_4">
                    <h3>Servi&ccedil;os</h3>
                     <div class="div_main_content_txt" >
-                        <p class="align_center"><img src="img/small_truck.jpg"></p>
+                        <p class="align_center"><img src="img/servicos_home.jpg"></p>
                         <p class="main_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies arcu tellus. Quisque quis turpis vel risus convallis sodales non at purus.</p>
                         <a href="#">Saiba Mais</a>
                     
@@ -50,7 +55,7 @@
                <div class="div_main_content grid_4">
                    <h3>Cota&ccedil;&otilde;es</h3>
                     <div class="div_main_content_txt" >
-                        <p class="align_center"><img src="img/small_truck.jpg"></p>
+                        <p class="align_center"><img src="img/cotacoes_home.jpg"></p>
                         <p class="main_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies arcu tellus. Quisque quis turpis vel risus convallis sodales non at purus.</p>
                         <a href="#">Saiba Mais</a>
                     
@@ -59,6 +64,14 @@
 
         </div>
     </div>
+        <div style="display: none">
+            <div id="pop_up" style='padding:10px; background:#fff;'>
+                <p><b>TAC Log</b><br>
+                 RodoExpress - transporte POAxSAO em 18hs.
+                 <img id="logistica" src="img/logistica.jpg">
+                </p>
+            </div>
+        </div>
     <?php include 'bottom_menu.php'; ?>
     </body>
 </html>

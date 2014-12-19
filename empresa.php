@@ -17,14 +17,7 @@
                     <div>
                         <p>
                             <img id="image_empresa" src="img/empresa_logistica.png"> 
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies
-                            arcu tellus. Quisque quis turpis vel risus convallis sodales non at purus. Etiam pellentesque, 
-                            ipsum eget facilisis accumsan, nulla erat lacinia mauris, sed vehicula lacus metus vel ipsum. 
-                            Suspendisse porttitor vel ipsum ut elementum. Fusce in ligula et nibh suscipit adipiscing a non velit. 
-                            Integer dapibus mi velit, et varius nisl convallis
-                            at. Duis ullamcorper augue et tempus dapibus. 
-                            Suspendisse molestie neque vel lacus porta, a euismod nunc elementum.
-                            
+                            A TAC Cargo surgiu no mercado de transporte e logística a fim de oferecer um diferencial no atendimento e comunicação com os clientes. Buscamos na dificuldade do mercado aprimorarmo-nos constantemente, proporcionando um serviço diferenciado, investindo em tecnologia e qualidade na informação.
                         </p>
                     </div>
                     
@@ -33,18 +26,19 @@
                 <div class="div_main_content grid_4">
                     <h3>Miss&atilde;o</h3>
                     <div class="div_main_content_txt" >
-                        <p class="main_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies
-                            arcu tellus. Quisque quis turpis vel risus convallis sodales non at purus. Etiam pellentesque, 
-                            ipsum eget facilisis accumsan, nulla erat lacinia mauris, sed vehicula lacus metus vel ipsum.</p>
+                        <p class="main_text">Atender as necessidades de nossos clientes, oferecendo solução em logística, composta por uma comunicação efetiva, atendimento com qualidade e agilidade nas informações.</p>
                     </div> 
                 </div>
                 
                <div class="div_main_content grid_4">
                    <h3>Princ&iacute;pios</h3>
                     <div class="div_main_content_txt" >
-                        <p class="main_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies
-                            arcu tellus. Quisque quis turpis vel risus convallis sodales non at purus. Etiam pellentesque, 
-                            ipsum eget facilisis accumsan, nulla erat lacinia mauris, sed vehicula lacus metus vel ipsum.</p>
+                        <p class="main_text">
+                            Agilidade<br>
+                            Comprometimento<br>
+                            Planejamento<br>
+                            Inovação<br>
+                        </p>
                     </div> 
                 </div>
                 

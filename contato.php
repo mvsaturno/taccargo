@@ -14,7 +14,7 @@
             <div class="container_12">
                 <div class="div_cot_txt">
                     <h1>Contato</h1>
-                    <p>Para solicitar a coleta de sua carga via internet preencha o formulário abaixo fornecendo suas informações, as características da carga e os locais de coleta e entrega.</p>
+                    <p>Para tirar dúvidas, dicas, sugestões ou reclamações, entre em contato conosco utilizando o formulário abaixo.</p>
                 </div>
                 <div class="div_contato_form">
                     <form action="" name="contato" id="contato">
@@ -98,7 +98,7 @@
                         <p> 
                             Av. Severo Dullius, 195 – PV. 106/B - São João - <span style="white-space: nowrap;">Porto Alegre/RS - 90200-310</span><br>
                             Telefones: (51) 3325-0303 / (51) 8104-4481<br>
-                            E-mail: <a href="mailto:contato@taccargo.com.br" target="_blank">contato@taccargo.com.br</a>
+                            E-mail: <a href="mailto:atendimento@taccargo.com.br" target="_blank">atendimento@taccargo.com.br</a>
                         </p>
                         <div  id="map">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d863.9346459923398!2d-51.158019666867936!3d-29.986941946918716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197737f900d731%3A0xb4ef637e4ea7978f!2sAv.+Severo+Dulius%2C+195+-+S%C3%A3o+Jo%C3%A3o%2C+Porto+Alegre+-+RS%2C+90200-310%2C+Rep%C3%BAblica+Federativa+do+Brasil!5e0!3m2!1spt-BR!2sus!4v1410145685449" frameborder="0" style="border:0"></iframe>

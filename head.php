@@ -6,10 +6,12 @@
 <!-- ===================== css ===================== -->
 <link rel="stylesheet" href="css/taccargo-theme/jquery-ui-1.9.2.custom.css" type="text/css" media="all" />
 <link rel="stylesheet" href="css/960.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/colorbox.css" />
 <link rel="stylesheet" href="css/layout.css" type="text/css">
 <!-- ===================== scripts ===================== -->
 <script src="js/jquery.js" type="text/javascript"></script>
 <script src="js/jquery-ui-1.9.2.custom.min.js" type="text/javascript"></script>
+<script src="js/jquery.colorbox-min.js" type="text/javascript"></script>
 <noscript>
 <link rel="stylesheet" href="css/adapt/mobile.min.css" />
 </noscript>
@@ -27,13 +29,13 @@ var ADAPT_CONFIG = {
   // Last range entry is the maximum.
   // Separate ranges by "to" keyword.
   range: [
-    '0px    to 760px  = mobile.min.css',
-    '760px  to 980px  = 720.min.css',
-    '980px  to 1280px = 960.min.css',
-    '1280px to 1600px = 1200.min.css',
-    '1600px to 1940px = 1560.min.css',
-    '1940px to 2540px = 1920.min.css',
-    '2540px           = 2520.min.css'
+    '0px    to 760px  = mobile.css',
+    '760px  to 980px  = 720.css',
+    '980px  to 1280px = 960.css',
+    '1280px to 1600px = 1200.css',
+    '1600px to 1940px = 1560.css',
+    '1940px to 2540px = 1920.css',
+    '2540px           = 2520.css'
   ]
 };
 </script>

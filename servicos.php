@@ -29,12 +29,11 @@
                     <div id="div_itens_servicos">
                             <h2>Confira nossos servi&ccedil;os</h2>
                             <ul>
-                                <li>Transporte Rodovi&aacute;rio</li>
-                                <li>Transporte A&eacute;reo</li>
-                                <li>Transporte Mar&iacute;timo</li>
-                                <li>Coletas</li>
-                                <li>Transporte Rápido</li>
-                                <li>Lorem ipsum dolor</li>
+                                <li>Transporte de Cargas</li>
+                                <li>Importação e Exportação</li>
+                                <li>Containers</li>
+                                <li>Coletas e Entregas</li>
+                                <li>RodoExpress</li>
                             </ul>
                         </div>
                     

@@ -355,3 +355,23 @@ body {
 .container_12 {
   zoom: 1;
 }
+
+#menu a{
+  font-size: 1.6em;
+}
+
+#div_bottom_text p{
+	font-size: 1.2em;
+}
+
+#brakeLine{
+    display:none;
+}
+
+.container_12 #div_logo.grid_3{
+    width: 300px;
+}
+#div_menu.push_1{
+    width: 620px;
+    left: 0
+}
