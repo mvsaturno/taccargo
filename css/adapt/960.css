@@ -364,8 +364,12 @@ body {
 	font-size: 1.2em;
 }
 
-#brakeLine{
+.breakLine{
     display:none;
+}
+
+.breakLine2{
+    display:inline;
 }
 
 .container_12 #div_logo.grid_3{
@@ -378,4 +382,14 @@ body {
 
 #data{
     width: 80%;
+}
+
+.ul_content {
+    width: 45%;
+}
+.image_servico{
+    width: 35%;
+}
+#link_email{
+    margin-left: 0px;
 }

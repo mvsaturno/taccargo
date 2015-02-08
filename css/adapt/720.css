@@ -377,7 +377,7 @@ body {
 	font-size: 1.2em;
 }
 
-#brakeLine{
+.breakLine, .breakLine2{
     display:inline;
 }
 
@@ -387,4 +387,19 @@ body {
 
 #data{
     width: 80%;
+}
+
+.ul_content {
+    width: 45%;
+}
+
+.image_servico{
+    width: 30%;
+}
+
+#link_email{
+    margin-left: 0px;
+}
+.div_main_content_txt{
+    min-height: 440px;
 }

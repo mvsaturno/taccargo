@@ -12,9 +12,11 @@
 .float_left{
     float: left;
 }
-
+body{
+    background-color: #b8312f;
+}
 /*======Containers===========================================*/
-#div_bottom_content, #div_topo_content, #div_main_index, #div_main_container{
+#div_bottom_content, #div_topo_content, #div_main_index, #div_main_container, #div_main_empresa{
     margin: 0 auto;
 }
 
@@ -97,7 +99,7 @@
         padding: 15px;
 }
 
-#div_bottom_text a{
+#link_email{
     margin-left: 10px;
 }
 
@@ -130,6 +132,10 @@
 	color: #fff;
 }
 
+#div_bottom a:hover{
+    text-decoration: underline;
+}
+
 #div_bottom_social li img{
     width: 50px;
 }
@@ -150,6 +156,7 @@
 	margin-top: 15px;
         max-height: 350px;
 }
+
 #slider{
     max-height: 300px
 }
@@ -157,6 +164,7 @@
 	margin-top: 15px;
 	background-color: rgba(255,255,255,0.8);
 	margin-bottom: 35px;
+        min-height: 468px;
 }
 .div_main_content_txt{
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -179,11 +187,12 @@
         margin-right: 10px;
 }
 
-.div_main_content p, #div_empresa p , #div_servicos p, #div_servicos li{
+.div_main_content p, #div_empresa p , #div_servicos p, #div_servicos li, #div_main_empresa li, .ul_content li{
 	color: #000;
 	font-size: 1.4em;
 	font-weight: 400;
 }
+
 .main_text{
     padding:15px
 }
@@ -212,17 +221,29 @@
     margin-bottom: 15px;
 }
 
-#image_empresa{
+#image_empresa, .image_servico{
     border: 10px solid white;
-    width: 30%;
+    width: 40%;
     margin: 0 50px 50px 50px;
     float: right;
+}
+
+#ul_principios{
+    padding: 15px;
+}
+
+#div_main_empresa .div_main_content{
+    min-height: 230px;
 }
 
 /* Serviços */
 #div_servicos #div_textos_servicos{
     float: left;
     width: 45%;
+}
+
+#div_servicos{
+    margin-bottom: 15px;
 }
 
 #div_itens_servicos{
@@ -236,8 +257,14 @@
     font-weight: 700;
     margin-bottom: 10px;
 }
+.ul_content {
+    float: left;
+    width: 50%;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
 
-#div_itens_servicos li{
+#div_itens_servicos li, #div_main_empresa li, .ul_content li{
     list-style: disc;
     margin-left: 10px;
     list-style-position: inside;
@@ -284,7 +311,7 @@
 	text-align: justify;
 }
 
-.div_cot_form input[type='text'], .div_cot_form textarea, .div_cot_form select, .div_contato_form textarea, .div_contato_form input[type='text'] {
+.div_cot_form input[type='text'], .div_cot_form textarea, .div_cot_form select, .div_contato_form textarea, .div_contato_form input[type='text'], .div_contato_form input[type='tel'], .div_contato_form input[type='email'] {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	height: 30px;
@@ -454,6 +481,9 @@
     height: 490px;
     margin-left: 3%;
 }
+#map{
+    margin-bottom: 30px;
+}
 #endereco p{
     color:black;
     line-height: 1.5em;
@@ -478,7 +508,7 @@
     display: inline-block;
 }
 
-#brakeLine{
+.breakLine, .breakLine2{
     display:none;
 }
 

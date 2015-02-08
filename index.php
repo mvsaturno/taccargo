@@ -36,7 +36,7 @@
                     <h3>Empresa</h3>
                     <div class="div_main_content_txt" >
                         <p class="align_center"><img src="img/small_truck.jpg"></p>
-                        <p class="main_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies arcu tellus. Quisque quis turpis vel risus convallis sodales non at purus.</p>
+                        <p class="main_text">Para a TAC Cargo, o desafio constante é prestar serviços da mais alta qualidade, com uma atenção especial às constantes mudanças do mercado, fazendo da qualidade um dos meios para atingir nossos objetivos.</p>
                         <a href="#">Saiba Mais</a>
                     
                     </div> 
@@ -46,7 +46,7 @@
                    <h3>Servi&ccedil;os</h3>
                     <div class="div_main_content_txt" >
                         <p class="align_center"><img src="img/servicos_home.jpg"></p>
-                        <p class="main_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies arcu tellus. Quisque quis turpis vel risus convallis sodales non at purus.</p>
+                        <p class="main_text">Conheça mais sobre os serviços realizados pela TAC Cargo.</p>
                         <a href="#">Saiba Mais</a>
                     
                     </div> 
@@ -56,7 +56,7 @@
                    <h3>Cota&ccedil;&otilde;es</h3>
                     <div class="div_main_content_txt" >
                         <p class="align_center"><img src="img/cotacoes_home.jpg"></p>
-                        <p class="main_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies arcu tellus. Quisque quis turpis vel risus convallis sodales non at purus.</p>
+                        <p class="main_text">Para solicitar uma cotação preencha o formulário. É necessário informar os dados para contato, as características da carga e o local de entrega ou coleta.</p>
                         <a href="#">Saiba Mais</a>
                     
                     </div> 

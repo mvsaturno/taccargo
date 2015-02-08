@@ -359,3 +359,15 @@ body {
 #data{
     width: 82%;
 }
+
+.breakLine2{
+    display:inline;
+}
+
+.ul_content {
+    width: 45%;
+}
+
+#link_email{
+    margin-left: 0px;
+}

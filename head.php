@@ -11,7 +11,7 @@
 <!-- ===================== scripts ===================== -->
 <script src="js/jquery.js" type="text/javascript"></script>
 <script src="js/jquery-ui-1.9.2.custom.min.js" type="text/javascript"></script>
-<script src="js/jquery.colorbox-min.js" type="text/javascript"></script>
+<script src="js/jquery.colorbox-min.js" type="text/javascript"></script
 <noscript>
 <link rel="stylesheet" href="css/adapt/mobile.min.css" />
 </noscript>

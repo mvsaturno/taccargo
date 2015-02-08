@@ -3,9 +3,12 @@
     <head>
         <meta name="description" content="texto de descri&ccedil;&atilde;o do site">
         <?php include 'head.php'; ?>
-        <link rel="stylesheet" href="css/light.css" type="text/css" media="screen" />
-        <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
-        <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+        <script src="js/jquery.maskedinput.min.js" type="text/javascript"></script>
+        <script>
+        $(function() {
+            $('#tel').mask("(99) 9999-9999?9");
+        });
+        </script>
     </head>
     <body>
         <?php $menu["contato"] = "class='menu_active'" ?>
@@ -17,7 +20,7 @@
                     <p>Para tirar dúvidas, dicas, sugestões ou reclamações, entre em contato conosco utilizando o formulário abaixo.</p>
                 </div>
                 <div class="div_contato_form">
-                    <form action="" name="contato" id="contato" action="mailSender.php">
+                    <form name="contato" id="contato" action="mailSender.php" method="post">
 
                         <fieldset class="fieldset_left grid_6 omega">
 
@@ -28,7 +31,7 @@
                                     <label for="nome">Nome:</label>
                                     </dt>
                                     <dt>
-                                    <input type="text" name="nome" id="nome" class="" />
+                                    <input type="text" name="nome" id="nome" class="" required="true"/>
                                     </dt>
                                 </dl>
 
@@ -37,7 +40,7 @@
                                     <label for="email">Email:</label>
                                     </dt>
                                     <dt>
-                                    <input type="text" name="email" id="email" class="" />
+                                    <input type="email" name="email" id="email" class="" required="true"/>
                                     </dt>
                                 </dl>
 
@@ -46,7 +49,7 @@
                                     <label for="tel">Telefone:</label>
                                     </dt>
                                     <dt>
-                                    <input type="text" name="tel" id="tel" class="" />
+                                    <input type="tel" name="tel" id="tel" class="" required="true"/>
                                     </dt>
                                 </dl>
                                 
@@ -63,7 +66,7 @@
                                     <label for="cidade">Cidade:</label>
                                     </dt>
                                     <dt>
-                                    <input type="text" name="cidade" id="cidade" class="" />
+                                    <input type="text" name="cidade" id="cidade" class="" required="true"/>
                                     </dt>
                                 </dl>
 
@@ -72,19 +75,19 @@
                                     <label for="estado">Estado:</label>
                                     </dt>
                                     <dt>
-                                    <input type="text" name="estado" id="estado" class="" />
+                                    <input type="text" name="estado" id="estado" class="" required="true" />
                                     </dt>
                                 </dl>
                                 <dl>
                                     <dt>
-                                    <label for="assunto">Assunto</label>
+                                    <label for="assunto">Assunto:</label>
                                     </dt>
                                     <dt>
-                                    <input type="text" name="assunto" id="assunto" class="" />
+                                    <input type="text" name="assunto" id="assunto" class="" required="true"/>
                                     </dt>
                                 </dl>
-                                <label for="observacao">Mensagem:</label>
-                                    <textarea name="observacao" id="observacao" class=""></textarea>
+                                <label for="mensagem">Mensagem:</label>
+                                <textarea name="mensagem" id="mensagem" class="" required="true"></textarea>
                                 <div class="clear"></div>
                                 <div class="form_buttons">
                                     <input type="hidden" name="origin" value="contato" />
@@ -95,10 +98,15 @@
                         </fieldset>
                     </form>
                     <div id="endereco" class="grid_6">
+                        <h4>Trabalhe Conosco</h4>
+                        <p>
+                            Seja um colaborador da TAC Cargo!<br>
+                            Envie seu currículo para <a href="mailto:rh@taccargo.com.br" target="_blank">rh@taccargo.com.br</a> mencionando o cargo pretendido.
+                        </p>
                         <h4>TAC Cargo Transporte e Log&iacute;stica Ltda</h4>
                         <p> 
                             Av. Severo Dulius, 195 – PV. 106/A - São João - <span style="white-space: nowrap;">Porto Alegre/RS - 90200-310</span><br>
-                            Telefones: (51) 3325-0303 / 3325-0451 / 3311-1113 / 3343-1227 / 3337-1561<br>
+                            Telefones: <a href="tel:+555133250303">(51) 3325-0303 </a>/ <a href="tel:+555133250451">3325-0451</a> / <a href="tel:+555133111113">3311-1113</a> / <a href="tel:+555133431227">3343-1227</a> / <a href="tel:+555133371561">3337-1561</a>  <br>
                             E-mail: <a href="mailto:atendimento@taccargo.com.br" target="_blank">atendimento@taccargo.com.br</a>
                         </p>
                         <div  id="map">

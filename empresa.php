@@ -11,13 +11,13 @@
         <?php $menu["empresa"] = "class='menu_active'"?>
         <?php include 'top_menu.php'; ?>
         <div id="div_main_container">
-            <div id="div_main_index" class="container_12">
+            <div id="div_main_empresa" class="container_12">
                 <div id="div_empresa">
                     <h1>Empresa</h1>
                     <div>
                         <p>
                             <img id="image_empresa" src="img/empresa_logistica.png"> 
-                            A TAC Cargo surgiu no mercado de transporte e logística a fim de oferecer um diferencial no atendimento e comunicação com os clientes. Buscamos na dificuldade do mercado aprimorarmo-nos constantemente, proporcionando um serviço diferenciado, investindo em tecnologia e qualidade na informação.
+                            A TAC Cargo surgiu no mercado de transporte e logística a fim de oferecer um diferencial no atendimento e comunicação com os clientes. Buscamos na dificuldade do mercado aprimorarmo-nos constantemente, proporcionando um serviço diferenciado, investindo em tecnologia e qualidade na informação. Buscamos ser referência no transporte e logística de cargas, superando a expectativa dos clientes através da excelência do serviço prestado.
                         </p>
                     </div>
                     
@@ -33,21 +33,21 @@
                <div class="div_main_content grid_4">
                    <h3>Princ&iacute;pios</h3>
                     <div class="div_main_content_txt" >
-                        <p class="main_text">
-                            Agilidade<br>
-                            Comprometimento<br>
-                            Planejamento<br>
-                            Inovação<br>
-                        </p>
+                        <ul id="ul_principios">
+                            <li>Agilidade nas entregas e rapidez nas informações.</li>
+                            <li>Comprometimento com os clientes.</li>
+                            <li>Planejamento para que não haja transtornos.</li>
+                            <li>Inovação em nossa estrutura para melhor atender as necessidades dos clientes.</li>
+                        </ul>
                     </div> 
                 </div>
                 
                <div class="div_main_content grid_4">
                    <h3>Diferencial</h3>
                     <div class="div_main_content_txt" >
-                        <p class="main_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultricies
-                            arcu tellus. Quisque quis turpis vel risus convallis sodales non at purus. Etiam pellentesque, 
-                            ipsum eget facilisis accumsan, nulla erat lacinia mauris, sed vehicula lacus metus vel ipsum.</p>
+                        <p class="main_text">
+                            A TAC Cargo trabalha priorizando a informação, pois sabe que a agilidade na comunicação é essencial para seus clientes, o que a torna favorita dentre as outras.
+                        </p>
                     </div> 
                 </div>
 
