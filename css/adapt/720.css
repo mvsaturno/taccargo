@@ -384,3 +384,7 @@ body {
 .img_link_util{
     width: 320px;
 }
+
+#data{
+    width: 80%;
+}

@@ -355,3 +355,7 @@ body {
 .container_12 {
   zoom: 1;
 }
+
+#data{
+    width: 82%;
+}

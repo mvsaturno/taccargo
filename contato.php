@@ -17,7 +17,7 @@
                     <p>Para tirar dúvidas, dicas, sugestões ou reclamações, entre em contato conosco utilizando o formulário abaixo.</p>
                 </div>
                 <div class="div_contato_form">
-                    <form action="" name="contato" id="contato">
+                    <form action="" name="contato" id="contato" action="mailSender.php">
 
                         <fieldset class="fieldset_left grid_6 omega">
 
@@ -87,6 +87,7 @@
                                     <textarea name="observacao" id="observacao" class=""></textarea>
                                 <div class="clear"></div>
                                 <div class="form_buttons">
+                                    <input type="hidden" name="origin" value="contato" />
                                     <input type="reset" value="Cancelar" />
                                     <input type="submit" class="" value="Enviar" />
                                 </div>
@@ -96,8 +97,8 @@
                     <div id="endereco" class="grid_6">
                         <h4>TAC Cargo Transporte e Log&iacute;stica Ltda</h4>
                         <p> 
-                            Av. Severo Dullius, 195 – PV. 106/B - São João - <span style="white-space: nowrap;">Porto Alegre/RS - 90200-310</span><br>
-                            Telefones: (51) 3325-0303 / (51) 8104-4481<br>
+                            Av. Severo Dulius, 195 – PV. 106/A - São João - <span style="white-space: nowrap;">Porto Alegre/RS - 90200-310</span><br>
+                            Telefones: (51) 3325-0303 / 3325-0451 / 3311-1113 / 3343-1227 / 3337-1561<br>
                             E-mail: <a href="mailto:atendimento@taccargo.com.br" target="_blank">atendimento@taccargo.com.br</a>
                         </p>
                         <div  id="map">
@@ -109,6 +110,30 @@
             </div>
         </div>
     </div>
+    <?php
+        $msg = filter_input(INPUT_GET, 'msg', FILTER_SANITIZE_STRING);
+        if(!empty($msg)){?>
+    <script>
+        $(function() {
+          $( "#dialog-message" ).dialog({
+            modal: true,
+            buttons: {
+              Ok: function() {
+                $( this ).dialog( "close" );
+              }
+            }
+          });
+        });
+    </script>
+    <div id="dialog-message" title="Message">
+      <p>
+          <b>
+            <?php 
+                echo $msg?>
+          </b>
+      </p>
+        </div>
+    <?php } ?>
     <?php include 'bottom_menu.php'; ?>
 </body>
 </html>
