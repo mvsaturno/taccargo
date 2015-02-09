@@ -3,9 +3,18 @@
     <head>
         <meta name="description" content="texto de descri&ccedil;&atilde;o do site">
         <?php include 'head.php'; ?>
-        <link rel="stylesheet" href="css/light.css" type="text/css" media="screen" />
-        <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
-        <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+        <script src="js/jquery.mask.min.js" type="text/javascript"></script>
+        <script>
+        $(function() {
+            $('#tel').mask('(00) 0000-0000Z', {translation:  {'Z': {pattern: /[0-9]/, optional: true}}});
+            $("#valor").mask("#.##0.00", {reverse: true});
+            $("#peso_bruto").mask("##0.000", {reverse: true});
+            $("#largura").mask("#.##0.00");
+            $("#altura").mask("#.##0.00");
+            $("#comprimento").mask("#.##0.00");
+            $("#peso_cubado").mask("#.##0.000", {reverse: true});
+        });
+        </script>
     </head>
     <body>
         <?php $menu["cotacoes"] = "class='menu_active'"?>
@@ -17,7 +26,7 @@
                     <p>Mais um serviço on-line para agilizar e facilitar o relacionamento da TAC Cargo com seus clientes. O orçamento do valor do frete depende de algumas variáveis como origem, destino, tipo de carga (características), valor da Nota Fiscal e o peso da carga. Aproveite e envie agora mesmo uma solicitação de cotação de transporte de mercadorias direto para a TAC Cargo, preenchendo todos os campos do formulário abaixo.</p>
                  </div>
                  <div class="div_cot_form">
-                        <form action="" name="cotacao" id="cotacao">
+                     <form action="mailSender.php" name="cotacao" id="cotacao" method="post">
 
                             <fieldset class="fieldset_left grid_6 omega">
 
@@ -28,7 +37,7 @@
                                         <label for="nome">Nome/Empresa:</label>
                                     </dt>
                                     <dt>
-                                        <input type="text" name="nome" id="nome" class="" />
+                                    <input type="text" name="nome" id="nome" class="" required="true" />
                                     </dt>
                                 </dl>
 
@@ -37,7 +46,7 @@
                                 <label for="email">Email:</label>
                                     </dt>
                                     <dt>
-                                <input type="text" name="email" id="email" class="" />
+                                    <input type="email" name="email" id="email" class="" required="true"/>
                                     </dt>
                                 </dl>
 
@@ -46,7 +55,7 @@
                                 <label for="tel">Telefone:</label>
                                 </dt>
                                 <dt>
-                                <input type="text" name="tel" id="tel" class="" />
+                                <input type="tel" name="tel" id="tel" class="" required="true" />
                                 </dt>
                                 </dl>
 
@@ -56,7 +65,7 @@
                                 </dt>                         
 
                                 <dt>
-                                <input type="text" name="origem" id="origem" class="" />
+                                <input type="text" name="origem" id="origem" class="" required="true" />
                                 </dt>
                                 </dl>
 
@@ -65,7 +74,7 @@
                                 <label for="destino">Destino:</label>
                                 </dt>                       
                                 <dt>
-                                <input type="text" name="destino" id="destino" class="" />
+                                <input type="text" name="destino" id="destino" class="" required="true" />
                                 </dt>
                                 </dl>     
 
@@ -74,7 +83,7 @@
                                 <label for="destinatario">Destinat&aacute;rio:</label>
                                     </dt>
                                     <dt>
-                                <input type="text" name="destinatario" id="destinatario" class="" />
+                                    <input type="text" name="destinatario" id="destinatario" class="" required="true"/>
                                     </dt>
                                 </dl>
 
@@ -95,7 +104,7 @@
                                         <label for="valor">Valor Declarado:</label>
                                     </dt>
                                     <dt>
-                                        <input type="text" name="valor" id="valor" class="" />
+                                    <input type="text" name="valor" id="valor" class="" required="true"/>
                                     </dt>
                                 </dl>
 
@@ -117,7 +126,7 @@
                                 <label for="peso_bruto">Peso Bruto(kg):</label>
                                 </dt>
                                 <dt>
-                                <input type="text" name="peso_bruto" id="peso_bruto" class="" />
+                                <input type="text" name="peso_bruto" id="peso_bruto" class="" required="true"/>
                                 </dt>
                             </dl>                    
 
@@ -126,40 +135,40 @@
                             <label for="qtde_volumes">Quantidade de Volumes:</label>
                                 </dt>
                                 <dt>
-                            <input type="text" name="qtde_volumes" id="qtde_volumes" class="" />
+                                <input type="text" name="qtde_volumes" id="qtde_volumes" class="" required="true" />
                                 </dt>
                             </dl>
 
                             <dl class="form_input_third">
                                 <dt>
-                            <label for="largura">Largura:</label>
+                            <label for="largura">Largura(m):</label>
                                 </dt>
                                 <dt>
-                            <input type="text" name="largura" id="largura" class="" />
+                                <input type="text" name="largura" id="largura" class="" required="true" />
                                 </dt>
                             </dl>
 
                             <dl class="form_input_third">
                                 <dt>
-                            <label for="altura">Altura:</label>
+                            <label for="altura">Altura(m):</label>
                                 </dt>
                                 <dt>
-                            <input type="text" name="altura" id="altura" class="" />
+                                <input type="text" name="altura" id="altura" class="" required="true" />
                                 </dt>
                             </dl>
 
                             <dl class="form_input_third omega">
                                 <dt>
-                            <label for="comprimento">Comprimento:</label>
+                            <label for="comprimento">Comprimento(m):</label>
                                 </dt>
                                 <dt>
-                            <input type="text" name="comprimento" id="comprimento" class="" />
+                                <input type="text" name="comprimento" id="comprimento" class="" required="true"/>
                                 </dt>
                             </dl>
 
                             <dl class="form_input_70 form_fl_left">
                                 <dt>
-                            <label for="peso_cubado">Peso Cubado:</label>
+                                <label for="peso_cubado">Peso Cubado(m<sup>3</sup>):</label>
                                 </dt>
                                 <dt>
                             <input type="text" name="peso_cubado" id="peso_cubado" class="" />
@@ -169,6 +178,7 @@
                             <p class="form_msg form_fl_left">Para mercadoria com volumes diferentes utilize nossa calculadora para peso cubado</p>
                             <div class="clear"></div>
                             <div class="form_buttons">
+                                <input type="hidden" name="origin" value="cotacoes">
                                 <input type="reset" value="Cancelar" />
                                 <input type="submit" class="" value="Enviar" />
                             </div>

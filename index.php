@@ -37,7 +37,7 @@
                     <div class="div_main_content_txt" >
                         <p class="align_center"><img src="img/small_truck.jpg"></p>
                         <p class="main_text">Para a TAC Cargo, o desafio constante é prestar serviços da mais alta qualidade, com uma atenção especial às constantes mudanças do mercado, fazendo da qualidade um dos meios para atingir nossos objetivos.</p>
-                        <a href="#">Saiba Mais</a>
+                        <a href="/empresa.php">Saiba Mais</a>
                     
                     </div> 
                 </div>
@@ -47,7 +47,7 @@
                     <div class="div_main_content_txt" >
                         <p class="align_center"><img src="img/servicos_home.jpg"></p>
                         <p class="main_text">Conheça mais sobre os serviços realizados pela TAC Cargo.</p>
-                        <a href="#">Saiba Mais</a>
+                        <a href="/servicos.php">Saiba Mais</a>
                     
                     </div> 
                 </div>
@@ -57,7 +57,7 @@
                     <div class="div_main_content_txt" >
                         <p class="align_center"><img src="img/cotacoes_home.jpg"></p>
                         <p class="main_text">Para solicitar uma cotação preencha o formulário. É necessário informar os dados para contato, as características da carga e o local de entrega ou coleta.</p>
-                        <a href="#">Saiba Mais</a>
+                        <a href="/cotacoes.php">Saiba Mais</a>
                     
                     </div> 
                 </div>
@@ -65,10 +65,8 @@
         </div>
     </div>
         <div style="display: none">
-            <div id="pop_up" style='padding:10px; background:#fff;'>
-                <p><b>TAC Log</b><br>
-                 RodoExpress - transporte POAxSAO em 18hs.
-                 <img id="logistica" src="img/logistica.jpg">
+            <div id="pop_up" style='padding:10px;'>
+                 <img id="logistica" src="img/pop_up_rodoExpress.png">
                 </p>
             </div>
         </div>
