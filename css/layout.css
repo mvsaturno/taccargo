@@ -311,7 +311,7 @@ body{
 	text-align: justify;
 }
 
-.div_cot_form input[type='text'], .div_cot_form textarea, .div_cot_form select, .div_contato_form textarea, .div_contato_form input[type='text'], .div_contato_form input[type='tel'], .div_contato_form input[type='email'] {
+.div_cot_form input[type='text'], .div_cot_form input[type='tel'], .div_cot_form input[type='email'], .div_cot_form input[type='date'], .div_cot_form textarea, .div_cot_form select, .div_contato_form textarea, .div_contato_form input[type='text'], .div_contato_form input[type='tel'], .div_contato_form input[type='email']{
 	margin-top: 10px;
 	margin-bottom: 10px;
 	height: 30px;
@@ -321,9 +321,12 @@ body{
         font-size: 1.2em;
         padding-left: 5px;
 }
+.div_cot_form input[type='date']{
+    width: 90%;
+}
 .div_cot_form textarea{
     min-height: 60px;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 .div_cot_form select{
     height: 34px;

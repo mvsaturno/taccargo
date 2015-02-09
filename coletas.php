@@ -3,9 +3,20 @@
     <head>
         <meta name="description" content="texto de descri&ccedil;&atilde;o do site">
         <?php include 'head.php'; ?>
-        <link rel="stylesheet" href="css/light.css" type="text/css" media="screen" />
-        <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
-        <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+        <script src="js/jquery.mask.min.js" type="text/javascript"></script>
+        <script>
+        $(function() {
+            $('#tel').mask('(00) 0000-0000Z', {translation:  {'Z': {pattern: /[0-9]/, optional: true}}});
+            $("#telefone_coleta").mask('(00) 0000-0000Z', {translation:  {'Z': {pattern: /[0-9]/, optional: true}}});
+            $("#valor").mask("#.##0.00", {reverse: true});
+            $("#peso_bruto").mask("##0.00", {reverse: true});
+            $("#largura").mask("#.##0.00");
+            $("#altura").mask("#.##0.00");
+            $("#comprimento").mask("#.##0.00");
+            $("#peso_cubado").mask("#.##0.000", {reverse: true});
+            $("#data").mask('00/00/0000');
+        });
+        </script>
     </head>
     <body>
         <?php $menu["coletas"] = "class='menu_active'" ?>
@@ -17,7 +28,7 @@
                     <p>Para solicitar a coleta de sua carga via internet preencha o formulário abaixo fornecendo suas informações, as características da carga e os locais de coleta e entrega.</p>
                 </div>
                 <div class="div_cot_form">
-                    <form action="" name="coleta" id="coleta">
+                    <form action="mailSender.php" name="coleta" id="coleta" method="post">
 
                         <fieldset class="fieldset_left grid_6 omega">
 
@@ -28,7 +39,7 @@
                                     <label for="nome">Nome/Empresa:</label>
                                     </dt>
                                     <dt>
-                                    <input type="text" name="nome" id="nome" class="" />
+                                    <input type="text" name="nome" id="nome" class="" required="true"/>
                                     </dt>
                                 </dl>
 
@@ -37,7 +48,7 @@
                                     <label for="email">Email:</label>
                                     </dt>
                                     <dt>
-                                    <input type="text" name="email" id="email" class="" />
+                                    <input type="email" name="email" id="email" class="" required="true"/>
                                     </dt>
                                 </dl>
 
@@ -46,7 +57,7 @@
                                     <label for="tel">Telefone:</label>
                                     </dt>
                                     <dt>
-                                    <input type="text" name="tel" id="tel" class="" />
+                                    <input type="tel" name="tel" id="tel" class="" required="true"/>
                                     </dt>
                                 </dl>
                                 
@@ -64,7 +75,7 @@
                                     <label for="telefone_coleta">Telefone no local da coleta:</label>
                                     </dt>
                                     <dt>
-                                    <input type="text" name="telefone_coleta" id="telefone_coleta" class="" />
+                                    <input type="tel" name="telefone_coleta" id="telefone_coleta" class="" />
                                     </dt>
                                 </dl>
                                 <dl>
@@ -72,7 +83,7 @@
                                     <label for="endereco_coleta">Endere&ccedil;o da coleta:</label>
                                     </dt>                         
                                     <dt>
-                                    <input type="text" name="endereco_coleta" id="endereco_coleta" class="" />
+                                    <input type="text" name="endereco_coleta" id="endereco_coleta" class="" required="true"/>
                                     </dt>
                                 </dl>
 
@@ -90,7 +101,7 @@
                                     <label for="cidade_estado">Cidade/Estado:</label>
                                     </dt>
                                     <dt>
-                                    <input type="text" name="cidade_estado" id="cidade_estado" class="" />
+                                    <input type="text" name="cidade_estado" id="cidade_estado" class="" required="true"/>
                                     </dt>
                                 </dl>
                                 <dl>
@@ -98,7 +109,7 @@
                                     <label for="destinatario">Destinat&aacute;rio:</label>
                                     </dt>
                                     <dt>
-                                    <input type="text" name="destinatario" id="destinatario" class="" />
+                                    <input type="text" name="destinatario" id="destinatario" class="" required="true"/>
                                     </dt>
                                 </dl>
                                 
@@ -107,7 +118,7 @@
                                     <label for="endereco_destino">Endere&ccedil;o de destino:</label>
                                     </dt>                         
                                     <dt>
-                                    <input type="text" name="endereco_destino" id="endereco_destino" class="" />
+                                    <input type="text" name="endereco_destino" id="endereco_destino" class="" required="true"/>
                                     </dt>
                                 </dl>
 
@@ -125,7 +136,7 @@
                                     <label for="cidade_estado_destino">Cidade/Estado:</label>
                                     </dt>
                                     <dt>
-                                    <input type="text" name="cidade_estado_destino" id="cidade_estado_destino" class="" />
+                                    <input type="text" name="cidade_estado_destino" id="cidade_estado_destino" class="" required="true"/>
                                     </dt>
                                 </dl>
 
@@ -142,7 +153,7 @@
                                     <label for="data">Data da coleta:</label>
                                     </dt>
                                     <dt>
-                                    <input type="text" name="data" id="data" class="" />
+                                    <input type="date" name="data" id="data" class="" required="true"/>
                                     </dt>
                                 </dl>
 
@@ -208,10 +219,10 @@
 
                                 <dl class="form_input_70 form_fl_left">
                                     <dt>
-                                    <label for="valor">Valor Declarado:</label>
+                                    <label for="valor">Valor Declarado(R$):</label>
                                     </dt>
                                     <dt>
-                                    <input type="text" name="valor" id="valor" class="" />
+                                    <input type="text" name="valor" id="valor" class="" required="true"/>
                                     </dt>
                                 </dl>
 
@@ -222,8 +233,8 @@
                                     </dt>
                                     <dt>
                                     <select name="seguro" id="seguro" class="">
-                                        <option value="nao">N&atilde;o</option>
-                                        <option value="sim">Sim</option>
+                                        <option value="Não">N&atilde;o</option>
+                                        <option value="Sim">Sim</option>
                                     </select>
                                     </dt>
                                 </dl>                                                
@@ -233,7 +244,7 @@
                                     <label for="peso_bruto">Peso Bruto(kg):</label>
                                     </dt>
                                     <dt>
-                                    <input type="text" name="peso_bruto" id="peso_bruto" class="" />
+                                    <input type="text" name="peso_bruto" id="peso_bruto" class="" required="true"/>
                                     </dt>
                                 </dl>                    
 
@@ -242,40 +253,40 @@
                                     <label for="qtde_volumes">Quantidade de Volumes:</label>
                                     </dt>
                                     <dt>
-                                    <input type="text" name="qtde_volumes" id="qtde_volumes" class="" />
+                                    <input type="text" name="qtde_volumes" id="qtde_volumes" class="" required="true"/>
                                     </dt>
                                 </dl>
 
                                 <dl class="form_input_third">
                                     <dt>
-                                    <label for="largura">Largura:</label>
+                                    <label for="largura">Largura(m):</label>
                                     </dt>
                                     <dt>
-                                    <input type="text" name="largura" id="largura" class="" />
+                                    <input type="text" name="largura" id="largura" class="" required="true"/>
                                     </dt>
                                 </dl>
 
                                 <dl class="form_input_third">
                                     <dt>
-                                    <label for="altura">Altura:</label>
+                                    <label for="altura">Altura(m):</label>
                                     </dt>
                                     <dt>
-                                    <input type="text" name="altura" id="altura" class="" />
+                                    <input type="text" name="altura" id="altura" class="" required="true"/>
                                     </dt>
                                 </dl>
 
                                 <dl class="form_input_third omega">
                                     <dt>
-                                    <label for="comprimento">Comprimento:</label>
+                                    <label for="comprimento">Comprimento(m):</label>
                                     </dt>
                                     <dt>
-                                    <input type="text" name="comprimento" id="comprimento" class="" />
+                                    <input type="text" name="comprimento" id="comprimento" class="" required="true"/>
                                     </dt>
                                 </dl>
 
                                 <dl class="form_input_70 form_fl_left">
                                     <dt>
-                                    <label for="peso_cubado">Peso Cubado:</label>
+                                    <label for="peso_cubado">Peso Cubado(m<sup>3</sup>):</label>
                                     </dt>
                                     <dt>
                                     <input type="text" name="peso_cubado" id="peso_cubado" class="" />
@@ -288,6 +299,7 @@
                                     <textarea name="observacao" id="observacao" class=""></textarea>
                                 <div class="clear"></div>
                                 <div class="form_buttons">
+                                    <input type="hidden" name="origin" value="coletas" />
                                     <input type="reset" value="Cancelar" />
                                     <input type="submit" class="" value="Enviar" />
                                 </div>

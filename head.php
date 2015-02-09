@@ -54,3 +54,27 @@ var ADAPT_CONFIG = {
     $menu['coletas'] = "";
     $menu['links'] = "";
     $menu['contato'] = ""; ?>
+<?php
+        $msg = filter_input(INPUT_GET, 'msg', FILTER_SANITIZE_STRING);
+        if(!empty($msg)){?>
+    <script>
+        $(function() {
+          $( "#dialog-message" ).dialog({
+            modal: true,
+            buttons: {
+              Ok: function() {
+                $( this ).dialog( "close" );
+              }
+            }
+          });
+        });
+    </script>
+    <div id="dialog-message" title="Message">
+      <p>
+          <b>
+            <?php 
+                echo $msg?>
+          </b>
+      </p>
+        </div>
+    <?php } ?>

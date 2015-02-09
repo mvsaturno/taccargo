@@ -5,12 +5,12 @@
  */
 
 $(function() {
-    $( "#data" ).datepicker({
+   /* $( "#data" ).datepicker({
       showOn: "button",
       buttonImage: "img/calendar.png",
       buttonImageOnly: true,
       buttonText: "Select date"
-    });
+    });*/
     
     $("#site_transportes").hover(
         function() {

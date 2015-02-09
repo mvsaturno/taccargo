@@ -3,10 +3,10 @@
     <head>
         <meta name="description" content="texto de descri&ccedil;&atilde;o do site">
         <?php include 'head.php'; ?>
-        <script src="js/jquery.maskedinput.min.js" type="text/javascript"></script>
+         <script src="js/jquery.mask.min.js" type="text/javascript"></script>
         <script>
         $(function() {
-            $('#tel').mask("(99) 9999-9999?9");
+             $('#tel').mask('(00) 0000-0000Z', {translation:  {'Z': {pattern: /[0-9]/, optional: true}}});
         });
         </script>
     </head>
@@ -117,31 +117,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    <?php
-        $msg = filter_input(INPUT_GET, 'msg', FILTER_SANITIZE_STRING);
-        if(!empty($msg)){?>
-    <script>
-        $(function() {
-          $( "#dialog-message" ).dialog({
-            modal: true,
-            buttons: {
-              Ok: function() {
-                $( this ).dialog( "close" );
-              }
-            }
-          });
-        });
-    </script>
-    <div id="dialog-message" title="Message">
-      <p>
-          <b>
-            <?php 
-                echo $msg?>
-          </b>
-      </p>
-        </div>
-    <?php } ?>
     <?php include 'bottom_menu.php'; ?>
 </body>
 </html>
