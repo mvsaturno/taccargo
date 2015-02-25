@@ -13,6 +13,17 @@
             $("#altura").mask("#.##0.00");
             $("#comprimento").mask("#.##0.00");
             $("#peso_cubado").mask("#.##0.000", {reverse: true});
+            $("#div_img_calc").on('click', function(){
+                // $("calc_peso_cubado").fadeIn();
+                $.colorbox({
+                        inline: true,
+                        href:"#calc_peso_cubado",
+                        open: true,
+                        title: "Informe os valores em metros:",
+                        width: "900px",
+                        height: "400px"
+                  });
+            });
         });
         </script>
     </head>
@@ -190,6 +201,52 @@
                      <div class="clear"></div>
                  </div>
             </div>
+        </div>
+        <div style="display:none">
+        <div id="calc_peso_cubado" style="padding: 30px;">
+            <form id="peso_form" name="peso_form" action="">
+                <div class="cubado_item">
+                <dl class="form_input_six">
+                    <dt><label for="altura_pcub">Altura:</label> </dt>
+                    <dt> <input type="text" name="altura_pcub" id="altura_pcub" class="" /> </dt>
+                </dl>
+                <dl class="form_input_six">
+                    <dt><label for="largura_pcub">Largura:</label> </dt>
+                    <dt> <input type="text" name="largura_pcub" id="largura_pcub" class="" /> </dt>
+                </dl>
+                <dl class="form_input_six">
+                    <dt><label for="profundidade_pcub">Profundidade:</label> </dt>
+                    <dt> <input type="text" name="profundidade_pcub" id="profundidade_pcub" class="" /> </dt>
+                </dl>
+
+                <dl class="form_input_six">
+                    <dt><label for="qtde_pcub">Quantidade:</label> </dt>
+                    <dt> <input type="text" name="qtde_pcub" id="qtde_pcub" class="" /> </dt>
+                </dl>
+
+                <dl class="form_input_six">
+                    <dt><label for="cubagem_pcub">Cubagem (m³):</label> </dt>
+                    <dt> <input type="text" name="cubagem_pcub" id="cubagem_pcub" class="" /> </dt>
+                </dl>
+
+                <dl class="form_input_six">
+                    <dt><label for="densidade_pcub">Densidade:</label> </dt>
+                    <dt> <input type="text" readonly name="densidade_pcub" id="densidade_pcub" class="" /> </dt>
+                </dl>
+
+                <div style="float:right; position:absolute; bottom:5%; right:5%">
+                <dl>
+                    <!-- <dt> -->
+                        <label for="total_cubado">Total Cubado:</label>
+                    <!-- </dt> -->
+                    <!-- <dt> -->
+                        <input readonly id="total_cubado" />
+                    <!-- </dt> -->
+                </dl>
+                </div>
+                </div>
+            </form>
+        </div>
         </div>
     <?php include 'bottom_menu.php'; ?>
     </body>
