@@ -191,7 +191,6 @@
                  </div>
             </div>
         </div>
-    </div>
     <?php include 'bottom_menu.php'; ?>
     </body>
 </html>
