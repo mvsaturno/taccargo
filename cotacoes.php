@@ -13,19 +13,9 @@
             $("#altura").mask("#.##0.00");
             $("#comprimento").mask("#.##0.00");
             $("#peso_cubado").mask("#.##0.000", {reverse: true});
-            $("#div_img_calc").on('click', function(){
-                // $("calc_peso_cubado").fadeIn();
-                $.colorbox({
-                        inline: true,
-                        href:"#calc_peso_cubado",
-                        open: true,
-                        title: "Informe os valores em metros:",
-                        width: "900px",
-                        height: "400px"
-                  });
-            });
         });
         </script>
+        <script src="js/calc_items.js"></script>
     </head>
     <body>
         <?php $menu["cotacoes"] = "class='menu_active'"?>
@@ -137,7 +127,7 @@
                                 <label for="peso_bruto">Peso Bruto(kg):</label>
                                 </dt>
                                 <dt>
-                                <input type="text" name="peso_bruto" id="peso_bruto" class="" required="true"/>
+                                <input type="text" name="peso_bruto" id="peso_bruto" class="" />
                                 </dt>
                             </dl>                    
 
@@ -146,7 +136,7 @@
                             <label for="qtde_volumes">Quantidade de Volumes:</label>
                                 </dt>
                                 <dt>
-                                <input type="text" name="qtde_volumes" id="qtde_volumes" class="" required="true" />
+                                <input type="text" name="qtde_volumes" id="qtde_volumes" class="" />
                                 </dt>
                             </dl>
 
@@ -155,7 +145,7 @@
                             <label for="largura">Largura(m):</label>
                                 </dt>
                                 <dt>
-                                <input type="text" name="largura" id="largura" class="" required="true" />
+                                <input type="text" name="largura" id="largura" class="" />
                                 </dt>
                             </dl>
 
@@ -164,7 +154,7 @@
                             <label for="altura">Altura(m):</label>
                                 </dt>
                                 <dt>
-                                <input type="text" name="altura" id="altura" class="" required="true" />
+                                <input type="text" name="altura" id="altura" class="" />
                                 </dt>
                             </dl>
 
@@ -173,7 +163,7 @@
                             <label for="comprimento">Comprimento(m):</label>
                                 </dt>
                                 <dt>
-                                <input type="text" name="comprimento" id="comprimento" class="" required="true"/>
+                                <input type="text" name="comprimento" id="comprimento" class="" />
                                 </dt>
                             </dl>
 
@@ -182,7 +172,7 @@
                                 <label for="peso_cubado">Peso Cubado(m<sup>3</sup>):</label>
                                 </dt>
                                 <dt>
-                            <input type="text" name="peso_cubado" id="peso_cubado" class="" />
+                            <input type="text" name="peso_cubado" id="peso_cubado" required class="" />
                                 </dt>
                             </dl>
                                 <div id="div_img_calc"><img src="img/calc.png" id="img_calc"/></div>
@@ -204,48 +194,48 @@
         </div>
         <div style="display:none">
         <div id="calc_peso_cubado" style="padding: 30px;">
-            <form id="peso_form" name="peso_form" action="">
-                <div class="cubado_item">
-                <dl class="form_input_six">
-                    <dt><label for="altura_pcub">Altura:</label> </dt>
-                    <dt> <input type="text" name="altura_pcub" id="altura_pcub" class="" /> </dt>
-                </dl>
-                <dl class="form_input_six">
-                    <dt><label for="largura_pcub">Largura:</label> </dt>
-                    <dt> <input type="text" name="largura_pcub" id="largura_pcub" class="" /> </dt>
-                </dl>
-                <dl class="form_input_six">
-                    <dt><label for="profundidade_pcub">Profundidade:</label> </dt>
-                    <dt> <input type="text" name="profundidade_pcub" id="profundidade_pcub" class="" /> </dt>
-                </dl>
+            <div id="cubado_items">
+                <div id="cubado_item_0">
+                    <dl class="form_input_six">
+                        <dt><label for="altura_pcub_0">Altura:</label> </dt>
+                        <dt> <input type="text" name="altura_pcub_0" id="altura_pcub_0" class="calc_item" /> </dt>
+                    </dl>
+                    <dl class="form_input_six">
+                        <dt><label for="largura_pcub_0">Largura:</label> </dt>
+                        <dt> <input type="text" name="largura_pcub_0" id="largura_pcub_0" class="calc_item" /> </dt>
+                    </dl>
+                    <dl class="form_input_six">
+                        <dt><label for="profundidade_pcub_0">Profundidade:</label> </dt>
+                        <dt> <input type="text" name="profundidade_pcub_0" id="profundidade_pcub_0" class="calc_item" /> </dt>
+                    </dl>
 
-                <dl class="form_input_six">
-                    <dt><label for="qtde_pcub">Quantidade:</label> </dt>
-                    <dt> <input type="text" name="qtde_pcub" id="qtde_pcub" class="" /> </dt>
-                </dl>
+                    <dl class="form_input_six">
+                        <dt><label for="quantidade_pcub_0">Quantidade:</label> </dt>
+                        <dt> <input type="text" name="quantidade_pcub_0" id="quantidade_pcub_0" class="calc_item" /> </dt>
+                    </dl>
 
-                <dl class="form_input_six">
-                    <dt><label for="cubagem_pcub">Cubagem (m³):</label> </dt>
-                    <dt> <input type="text" name="cubagem_pcub" id="cubagem_pcub" class="" /> </dt>
-                </dl>
+                    <dl class="form_input_six">
+                        <dt><label for="cubagem_pcub_0">Cubagem (m³):</label> </dt>
+                        <dt> <input type="text" readonly name="cubagem_pcub_0" id="cubagem_pcub_0" class="calc_item" /> </dt>
+                    </dl>
 
-                <dl class="form_input_six">
-                    <dt><label for="densidade_pcub">Densidade:</label> </dt>
-                    <dt> <input type="text" readonly name="densidade_pcub" id="densidade_pcub" class="" /> </dt>
-                </dl>
-
+                    <dl class="form_input_six">
+                        <dt><label for="densidade_pcub_0">Densidade:</label> </dt>
+                        <dt> <input type="text" readonly name="densidade_pcub_0" id="densidade_pcub_0" class="calc_item" /> </dt>
+                    </dl>
+                    <div class="calc_buttons_wrap">
+                    <div class="calculate_item_calc"><img src="img/calc.png" /></div>
+                    </div>
+                </div>
+            </div>
+            <button id="cubagem_add_btn">Adicionar itens</button>
                 <div style="float:right; position:absolute; bottom:5%; right:5%">
-                <dl>
-                    <!-- <dt> -->
+                    <dl>
                         <label for="total_cubado">Total Cubado:</label>
-                    <!-- </dt> -->
-                    <!-- <dt> -->
                         <input readonly id="total_cubado" />
-                    <!-- </dt> -->
-                </dl>
+                    </dl>
+                    <button id="calculado">OK</button>
                 </div>
-                </div>
-            </form>
         </div>
         </div>
     <?php include 'bottom_menu.php'; ?>
