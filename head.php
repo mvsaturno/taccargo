@@ -2,6 +2,7 @@
 <meta charset="utf-8">
 <meta http-equiv="cache-control" content="no-cache">
 <meta http-equiv="pragma" content="no-cache">
+<link rel="shortcut icon" href="/img/favicon.ico" />
 
 <!-- ===================== css ===================== -->
 <link rel="stylesheet" href="css/taccargo-theme/jquery-ui-1.9.2.custom.css" type="text/css" media="all" />
