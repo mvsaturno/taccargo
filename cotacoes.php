@@ -175,7 +175,7 @@
                             <input type="text" name="peso_cubado" id="peso_cubado" required class="" />
                                 </dt>
                             </dl>
-                                <div id="div_img_calc"><img src="img/calc.png" id="img_calc"/></div>
+                                <div id="div_img_calc"><img src="img/calc.png" id="img_calc" title="Calcular múltiplos formatos"/></div>
                             <p class="form_msg form_fl_left">Para mercadoria com volumes diferentes utilize nossa calculadora para peso cubado</p>
                             <div class="clear"></div>
                             <div class="form_buttons">
@@ -197,15 +197,15 @@
             <div id="cubado_items">
                 <div id="cubado_item_0">
                     <dl class="form_input_six">
-                        <dt><label for="altura_pcub_0">Altura:</label> </dt>
+                        <dt><label for="altura_pcub_0">Altura(m):</label> </dt>
                         <dt> <input type="text" name="altura_pcub_0" id="altura_pcub_0" class="calc_item" /> </dt>
                     </dl>
                     <dl class="form_input_six">
-                        <dt><label for="largura_pcub_0">Largura:</label> </dt>
+                        <dt><label for="largura_pcub_0">Largura(m):</label> </dt>
                         <dt> <input type="text" name="largura_pcub_0" id="largura_pcub_0" class="calc_item" /> </dt>
                     </dl>
                     <dl class="form_input_six">
-                        <dt><label for="profundidade_pcub_0">Profundidade:</label> </dt>
+                        <dt><label for="profundidade_pcub_0">Profundidade(m):</label> </dt>
                         <dt> <input type="text" name="profundidade_pcub_0" id="profundidade_pcub_0" class="calc_item" /> </dt>
                     </dl>
 
@@ -215,7 +215,7 @@
                     </dl>
 
                     <dl class="form_input_six">
-                        <dt><label for="cubagem_pcub_0">Cubagem (m³):</label> </dt>
+                        <dt><label for="cubagem_pcub_0">Cubagem(m³):</label> </dt>
                         <dt> <input type="text" readonly name="cubagem_pcub_0" id="cubagem_pcub_0" class="calc_item" /> </dt>
                     </dl>
 
@@ -224,17 +224,17 @@
                         <dt> <input type="text" readonly name="densidade_pcub_0" id="densidade_pcub_0" class="calc_item" /> </dt>
                     </dl>
                     <div class="calc_buttons_wrap">
-                    <div class="calculate_item_calc"><img src="img/calc.png" /></div>
+                    <div class="calculate_item_calc"><img src="img/calc.png" title="Calcular"/></div>
                     </div>
                 </div>
             </div>
-            <button id="cubagem_add_btn">Adicionar itens</button>
-                <div style="float:right; position:absolute; bottom:5%; right:5%">
+            <button id="cubagem_add_btn">+ Adicionar itens</button>
+                <div style="float:right; position:absolute; bottom:5%; right:4%">
                     <dl>
                         <label for="total_cubado">Total Cubado:</label>
                         <input readonly id="total_cubado" />
+                        <button id="calculado">OK</button>
                     </dl>
-                    <button id="calculado">OK</button>
                 </div>
         </div>
         </div>

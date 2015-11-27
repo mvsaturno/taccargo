@@ -561,3 +561,14 @@ input[type=number]::-webkit-outer-spin-button {
 .img_link_util{
     width: 520px;
 }
+
+#cubagem_add_btn, #calculado{
+    padding: 5px 15px;
+    border: 0;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    margin-left: 15px;
+    font-family: 'Ek Mukta', sans-serif;
+    background-color: #078C2E;
+}
